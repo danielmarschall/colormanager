@@ -1,0 +1,5 @@
+mehr farbräume
+farben im screenshot wählen
+fenster beim picking minimieren
+beliebige basen bei eingaben
+(funktionen mit anderen programmen vergleichen)
