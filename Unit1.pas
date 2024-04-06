@@ -34,7 +34,6 @@ type
     CurrentLbl: TLabel;
     mWebsafe: TMenuItem;
     mWebsafeInv: TMenuItem;
-    TabControl: TTabControl;
     Panel1: TPanel;
     RGBBox: TGroupBox;
     RLbl: TLabel;
@@ -297,16 +296,12 @@ type
     Info9: TLabel;
     Info12: TLabel;
     Info5: TLabel;
-    Info10: TLabel;
-    Info11: TLabel;
     Info14: TLabel;
     Info15: TLabel;
     Info13: TLabel;
     ColorTmr: TTimer;
     Info3: TLabel;
-    AverageX: TEdit;
     AverageMidLbl: TLabel;
-    AverageY: TEdit;
     MagPnl: TPanel;
     MagBox: TPaintBox;
     favo17: TPanel;
@@ -330,6 +325,13 @@ type
     RProLbl: TLabel;
     GProLbl: TLabel;
     BProLbl: TLabel;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    AverageX: TSpinEdit;
+    AverageY: TSpinEdit;
     procedure ColorClick(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure SaveEditChange(Sender: TObject);
@@ -343,7 +345,6 @@ type
     procedure OutboxPaint(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure WebsafeLblClick(Sender: TObject);
-    procedure TabControlChange(Sender: TObject);
     procedure InvertBtnClick(Sender: TObject);
     procedure TakeClick(Sender: TObject);
     procedure DelphiBoxClick(Sender: TObject);
@@ -358,6 +359,7 @@ type
     procedure EditKeyPress(Sender: TObject; var Key: Char);
     procedure UpDownClick(Sender: TObject; Button: TUDBtnType);
     procedure Change(Sender: TObject);
+    procedure AverageXYChange(Sender: TObject);
   private
     LangArray: Array of TLanguageEntry;
     function GetLangEntry(name: string): string;
@@ -378,8 +380,8 @@ type
     procedure CheckWebfarben;
     procedure CheckDelphiFarben;
     procedure ZeigeRichtigePalette;
-    procedure SchreibeInt(name: string; wert: integer);
-    function LeseInt(name: string): integer;
+    procedure WriteIntSetting(name: string; wert: integer);
+    function ReadIntSetting(name: string): integer;
 end;
 
 var
@@ -392,27 +394,159 @@ implementation
 {$R WindowsXP.res}
 
 const
-  webfarben: array[0..140] of string = ('#F0F8FF', '#FAEBD7', '#00FFFF', '#7FFFD4',
-    '#F0FFFF', '#F5F5DC', '#FFE4C4', '#000000', '#FFEBCD', '#0000FF', '#8A2BE2',
-    '#A52A2A', '#DEB887', '#5F9EA0', '#7FFF00', '#D2691E', '#FF7F50', '#6495ED',
-    '#FFF8DC', '#DC143C', '#00FFFF', '#00008B', '#008B8B', '#B8860B', '#A9A9A9',
-    '#006400', '#BDB76B', '#8B008B', '#556B2F', '#FF8C00', '#9932CC', '#8B0000',
-    '#E9967A', '#8FBC8F', '#483D8B', '#2F4F4F', '#00CED1', '#9400D3', '#FF1493',
-    '#00BFFF', '#696969', '#1E90FF', '#B22222', '#FFFAF0', '#228B22', '#FF00FF',
-    '#DCDCDC', '#F8F8FF', '#FFD700', '#DAA520', '#808080', '#008000', '#ADFF2F',
-    '#808080', '#F0FFF0', '#FF69B4', '#CD5C5C', '#4B0082', '#FFFFF0', '#F0E68C',
-    '#E6E6FA', '#FFF0F5', '#7CFC00', '#FFFACD', '#ADD8E6', '#F08080', '#E0FFFF',
-    '#FAFAD2', '#90EE90', '#D3D3D3', '#FFB6C1', '#FFA07A', '#20B2AA', '#87CEFA',
-    '#778899', '#B0C4DE', '#FFFFE0', '#00FF00', '#32CD32', '#FAF0E6', '#FF00FF',
-    '#800000', '#66CDAA', '#0000CD', '#BA55D3', '#9370DB', '#3CB371', '#7B68EE',
-    '#00FA9A', '#48D1CC', '#C71585', '#191970', '#F5FFFA', '#FFE4E1', '#FFE4B5',
-    '#FFDEAD', '#000080', '#FDF5E6', '#808000', '#6B8E23', '#FFA500', '#FF4500',
-    '#DA70D6', '#EEE8AA', '#98FB98', '#AFEEEE', '#DB7093', '#FFEFD5', '#FFDAB9',
-    '#CD853F', '#FFC0CB', '#DDA0DD', '#B0E0E6', '#800080', '#FF0000', '#BC8F8F',
-    '#4169E1', '#8B4513', '#FA8072', '#F4A460', '#2E8B57', '#FFF5EE', '#A0522D',
-    '#C0C0C0', '#87CEEB', '#6A5ACD', '#708090', '#FFFAFA', '#00FF7F', '#4682B4',
-    '#D2B48C', '#008080', '#D8BFD8', '#FF6347', '#40E0D0', '#EE82EE', '#F5DEB3',
-    '#FFFFFF', '#F5F5F5', '#FFFF00', '#9ACD32');
+  // Source: https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+  webfarben: array[0..149] of string = (
+    '#f0f8ff', // aliceblue
+    '#faebd7', // antiquewhite
+    '#00ffff', // aqua
+    '#7fffd4', // aquamarine
+    '#f0ffff', // azure
+    '#f5f5dc', // beige
+    '#ffe4c4', // bisque
+    '#000000', // black
+    '#ffebcd', // blanchedalmond
+    '#0000ff', // blue
+    '#8a2be2', // blueviolet
+    '#a52a2a', // brown
+    '#deb887', // burlywood
+    '#5f9ea0', // cadetblue
+    '#7fff00', // chartreuse
+    '#d2691e', // chocolate
+    '#ff7f50', // coral
+    '#6495ed', // cornflowerblue
+    '#fff8dc', // cornsilk
+    '#dc143c', // crimson
+    '#00ffff', // cyan (synonym of aqua)
+    '#00008b', // darkblue
+    '#008b8b', // darkcyan
+    '#b8860b', // darkgoldenrod
+    '#a9a9a9', // darkgray
+    '#006400', // darkgreen
+    '#a9a9a9', // darkgrey
+    '#bdb76b', // darkkhaki
+    '#8b008b', // darkmagenta
+    '#556b2f', // darkolivegreen
+    '#ff8c00', // darkorange
+    '#9932cc', // darkorchid
+    '#8b0000', // darkred
+    '#e9967a', // darksalmon
+    '#8fbc8f', // darkseagreen
+    '#483d8b', // darkslateblue
+    '#2f4f4f', // darkslategray
+    '#2f4f4f', // darkslategrey
+    '#00ced1', // darkturquoise
+    '#9400d3', // darkviolet
+    '#ff1493', // deeppink
+    '#00bfff', // deepskyblue
+    '#696969', // dimgray
+    '#696969', // dimgrey
+    '#1e90ff', // dodgerblue
+    '#b22222', // firebrick
+    '#fffaf0', // floralwhite
+    '#228b22', // forestgreen
+    '#ff00ff', // fuchsia
+    '#dcdcdc', // gainsboro
+    '#f8f8ff', // ghostwhite
+    '#ffd700', // gold
+    '#daa520', // goldenrod
+    '#808080', // gray
+    '#008000', // green
+    '#adff2f', // greenyellow
+    '#808080', // grey (synonym of gray)
+    '#f0fff0', // honeydew
+    '#ff69b4', // hotpink
+    '#cd5c5c', // indianred
+    '#4b0082', // indigo
+    '#fffff0', // ivory
+    '#f0e68c', // khaki
+    '#e6e6fa', // lavender
+    '#fff0f5', // lavenderblush
+    '#7cfc00', // lawngreen
+    '#fffacd', // lemonchiffon
+    '#add8e6', // lightblue
+    '#f08080', // lightcoral
+    '#e0ffff', // lightcyan
+    '#fafad2', // lightgoldenrodyellow
+    '#d3d3d3', // lightgray
+    '#90ee90', // lightgreen
+    '#d3d3d3', // lightgrey
+    '#ffb6c1', // lightpink
+    '#ffa07a', // lightsalmon
+    '#20b2aa', // lightseagreen
+    '#87cefa', // lightskyblue
+    '#778899', // lightslategray
+    '#778899', // lightslategrey
+    '#b0c4de', // lightsteelblue
+    '#ffffe0', // lightyellow
+    '#00ff00', // lime
+    '#00ff00', // lime
+    '#32cd32', // limegreen
+    '#faf0e6', // linen
+    '#ff00ff', // magenta (synonym of fuchsia)
+    '#800000', // maroon
+    '#800000', // maroon
+    '#66cdaa', // mediumaquamarine
+    '#0000cd', // mediumblue
+    '#ba55d3', // mediumorchid
+    '#9370db', // mediumpurple
+    '#3cb371', // mediumseagreen
+    '#7b68ee', // mediumslateblue
+    '#00fa9a', // mediumspringgreen
+    '#48d1cc', // mediumturquoise
+    '#c71585', // mediumvioletred
+    '#191970', // midnightblue
+    '#f5fffa', // mintcream
+    '#ffe4e1', // mistyrose
+    '#ffe4b5', // moccasin
+    '#ffdead', // navajowhite
+    '#000080', // navy
+    '#fdf5e6', // oldlace
+    '#808000', // olive
+    '#6b8e23', // olivedrab
+    '#ffa500', // orange
+    '#ff4500', // orangered
+    '#da70d6', // orchid
+    '#eee8aa', // palegoldenrod
+    '#98fb98', // palegreen
+    '#afeeee', // paleturquoise
+    '#db7093', // palevioletred
+    '#ffefd5', // papayawhip
+    '#ffdab9', // peachpuff
+    '#cd853f', // peru
+    '#ffc0cb', // pink
+    '#dda0dd', // plum
+    '#b0e0e6', // powderblue
+    '#800080', // purple
+    '#663399', // rebeccapurple
+    '#ff0000', // red
+    '#bc8f8f', // rosybrown
+    '#4169e1', // royalblue
+    '#8b4513', // saddlebrown
+    '#fa8072', // salmon
+    '#f4a460', // sandybrown
+    '#2e8b57', // seagreen
+    '#fff5ee', // seashell
+    '#a0522d', // sienna
+    '#c0c0c0', // silver
+    '#87ceeb', // skyblue
+    '#6a5acd', // slateblue
+    '#708090', // slategray
+    '#708090', // slategrey
+    '#fffafa', // snow
+    '#00ff7f', // springgreen
+    '#4682b4', // steelblue
+    '#d2b48c', // tan
+    '#008080', // teal
+    '#d8bfd8', // thistle
+    '#ff6347', // tomato
+    '#40e0d0', // turquoise
+    '#ee82ee', // violet
+    '#f5deb3', // wheat
+    '#ffffff', // white
+    '#f5f5f5', // whitesmoke
+    '#ffff00', // yellow
+    '#9acd32'  // yellowgreen
+  );
 
 function TMainForm.GetLangEntry(name: string): string;
 var
@@ -558,6 +692,11 @@ procedure TMainForm.AppDeactivate(Sender: TObject);
 begin
   if not PickBtn.Enabled then
     SetCapture(MainForm.Handle);
+end;
+
+procedure TMainForm.AverageXYChange(Sender: TObject);
+begin
+  WriteIntSetting(TSpinEdit(sender).GetNamePath, TSpinEdit(sender).Value);
 end;
 
 procedure TMainForm.DrawGrad(BoxNum: integer);
@@ -755,6 +894,8 @@ begin
     end;
   end;
 
+  PageControl1.ActivePageIndex := 0;
+
   // Elemente mit Sprache versehen
   rgbbox.Caption := GetLangEntry('rgb');
   hsvbox.Caption := GetLangEntry('hsv');
@@ -793,11 +934,10 @@ begin
   websafelbl.caption := GetLangEntry('websafelbl');
   komplementaercolor.Caption := GetLangEntry('invcolor');
   websafe2.Caption := GetLangEntry('invwebsafe');
-  tabcontrol.tabs.clear;
-  tabcontrol.Tabs.add(GetLangEntry('tab1'));
-  tabcontrol.Tabs.add(GetLangEntry('tab2'));
-  tabcontrol.Tabs.add(GetLangEntry('tab3'));
-  tabcontrol.Tabs.add(GetLangEntry('tab4'));
+  PageControl1.Pages[0].Caption := GetLangEntry('tab1');
+  PageControl1.Pages[1].Caption := GetLangEntry('tab2');
+  PageControl1.Pages[2].Caption := GetLangEntry('tab3');
+  PageControl1.Pages[3].Caption := GetLangEntry('tab4');
   colormixerbox.Caption := getlangentry('colormixer');
   color1.Caption := getlangentry('color') + ' 1';
   color2.Caption := getlangentry('color') + ' 2';
@@ -805,7 +945,7 @@ begin
   colorbox.caption := getlangentry('colors');
   pallbl.Caption := getlangentry('availablepals');
   delphiboxlbl.Caption := getlangentry('delphipal');
-  webcolorlbl.Caption := getlangentry('css3');
+  webcolorlbl.Caption := getlangentry('css');
   delphizutreffendlbl.Caption := getlangentry('zutr');
   webzutreffendlbl.Caption := getlangentry('zutr');
   qblbl.Caption := getlangentry('vgapal');
@@ -823,7 +963,6 @@ begin
   info4.Caption := getlangentry('leader');
   info6.Caption := getlangentry('email');
   info8.Caption := getlangentry('website');
-  info10.Caption := getlangentry('icq');
   info13.Caption := getlangentry('webportal');
   info14.Caption := getlangentry('viathinksoft');
   info15.Caption := getlangentry('projektseite');
@@ -852,10 +991,10 @@ begin
   // Favoriten-Farben und Einstellungen aus Registry holen
   pal.ItemIndex := 0;
   for i := 1 to 20 do
-    tpanel(mainform.FindComponent('favo'+inttostr(i))).Color := LeseInt('favo'+inttostr(i));
-  pal.ItemIndex := LeseInt('Palette');
-  AverageX.Text := inttostr(LeseInt('AverageX'));
-  AverageY.Text := inttostr(LeseInt('AverageY'));
+    tpanel(mainform.FindComponent('favo'+inttostr(i))).Color := ReadIntSetting('favo'+inttostr(i));
+  pal.ItemIndex := ReadIntSetting('Palette');
+  AverageX.Value := ReadIntSetting('AverageX');
+  AverageY.Value := ReadIntSetting('AverageY');
 
   ZeigeRichtigePalette;
 end;
@@ -1013,7 +1152,7 @@ begin
   begin
     if not (Key in [#13, #08, '0'..'9', 'a'..'f', 'A'..'F']) then Key := #0;
   end
-  else if (sender = Long) or (sender = AverageX) or (sender = AverageY) or
+  else if (sender = Long) or
     (sender = SPro) or (sender = VPro) or (sender = RPro) or (sender = GPro) or
     (sender = BPro) then
   begin
@@ -1457,41 +1596,43 @@ var
   AverageR, AverageG, AverageB: integer;
   x, y: shortint;
 begin
+  if PageControl1.ActivePage <> TabSheet3 then exit;
+
   GetCursorPos(CursorPos);
   CoordsLbl.Caption := Format('%d,' + #13 + '%d', [CursorPos.x, CursorPos.y]);
 
   AverageR := 0;
   AverageG := 0;
   Averageb := 0;
-  for y := -floor((strtoint(AverageY.text)-1)/2) to ceil((strtoint(AverageY.text)-1)/2) do
-    for x := -floor((strtoint(AverageX.text)-1)/2) to ceil((strtoint(AverageX.text)-1)/2) do
+  for y := -floor((AverageY.Value-1)/2) to ceil((AverageY.Value-1)/2) do
+    for x := -floor((AverageX.Value-1)/2) to ceil((AverageX.Value-1)/2) do
     begin
       PixelCol := GetPixel(ScreenDC, CursorPos.x + x, CursorPos.y + y);
       AverageR := AverageR + GetRValue(PixelCol);
       AverageG := AverageG + GetGValue(PixelCol);
       AverageB := AverageB + GetBValue(PixelCol);
     end;
-  if strtoint(AverageX.text)*strtoint(AverageY.text) > 0 then
-    AverageR := AverageR div (strtoint(AverageX.text)*strtoint(AverageY.text));
-  if strtoint(AverageX.text)*strtoint(AverageY.text) > 0 then
-    AverageG := AverageG div (strtoint(AverageX.text)*strtoint(AverageY.text));
-  if strtoint(AverageX.text)*strtoint(AverageY.text) > 0 then
-    AverageB := AverageB div (strtoint(AverageX.text)*strtoint(AverageY.text));
+  if AverageX.Value*AverageY.Value > 0 then
+    AverageR := AverageR div (AverageX.Value*AverageY.Value);
+  if AverageX.Value*AverageY.Value > 0 then
+    AverageG := AverageG div (AverageX.Value*AverageY.Value);
+  if AverageX.Value*AverageY.Value > 0 then
+    AverageB := AverageB div (AverageX.Value*AverageY.Value);
 
   PixelCol := RGB(Lo(AverageR), Lo(AverageG), Lo(AverageB));
 
   BitBlt(MemPix.Canvas.Handle,
      0, 0,
-     strtoint(AverageX.text), strtoint(AverageY.text),
+     AverageX.Value, AverageY.Value,
      ScreenDC,
-     CursorPos.x - floor(strtoint(AverageX.text)/2), CursorPos.y - floor(strtoint(AverageY.text)/2),
+     CursorPos.x - floor(AverageX.Value/2), CursorPos.y - floor(AverageY.Value/2),
      SRCCOPY);
   StretchBlt(MagBox.Canvas.Handle,
      0, 0,
      MagBox.Width, MagBox.Height,
      MemPix.Canvas.Handle,
      0, 0,
-     strtoint(AverageX.text), strtoint(AverageY.text),
+     AverageX.Value, AverageY.Value,
      SRCCOPY);
 
   if not PickBtn.Enabled then
@@ -1541,7 +1682,7 @@ begin
      (PopupmenuSender = favo13) or (PopupmenuSender = favo14) or (PopupmenuSender = favo15) or
      (PopupmenuSender = favo16) or (PopupmenuSender = favo17) or (PopupmenuSender = favo18) or
      (PopupmenuSender = favo19) or (PopupmenuSender = favo20) then
-    SchreibeInt(tpanel(PopupmenuSender).GetNamePath, colortorgb(tpanel(PopupmenuSender).color));
+    WriteIntSetting(tpanel(PopupmenuSender).GetNamePath, colortorgb(tpanel(PopupmenuSender).color));
 end;
 
 procedure TMainForm.Menu2Click(Sender: TObject);
@@ -1553,8 +1694,30 @@ begin
 end;
 
 procedure TMainForm.GreyscaleBtnClick(Sender: TObject);
+var
+  i: integer;
 begin
-  S.Position := 0;
+  //S.Position := 0;
+
+  i := Round((R.Position*0.2126) + (G.Position*0.7152) + (B.Position*0.0722));
+
+  R.OnChange := nil;
+  G.OnChange := nil;
+  B.OnChange := nil;
+
+  R.Position := i;
+  G.Position := i;
+  B.Position := i;
+
+  AktualisiereWert(r);
+  AktualisiereWert(g);
+  AktualisiereWert(b);
+
+  R.OnChange := Change;
+  G.OnChange := Change;
+  B.OnChange := Change;
+
+  AktualisiereFarben(true);
 end;
 
 procedure TMainForm.DefColorClick(Sender: TObject);
@@ -1584,7 +1747,7 @@ begin
   G.OnChange := Change;
   B.OnChange := Change;
 
-  // DelphiBox muss nicht mehr ignoriert werden, da wir nun "DelphiZustimmend"
+  // DelphiBox muss nicht mehr ignoriert werden, da wir nun "CheckDelphiFarben"
   // verwenden und nichts mehr in der DelphiBox markieren
   // AktualisiereFarben(true, 1);
   AktualisiereFarben(true);
@@ -1600,14 +1763,6 @@ begin
   TakeClick(KomplementaerColor);
 end;
 
-procedure TMainForm.TabControlChange(Sender: TObject);
-begin
-  panel1.Visible := tabcontrol.TabIndex = 0;
-  panel2.Visible := tabcontrol.TabIndex = 1;
-  panel3.Visible := tabcontrol.TabIndex = 2;
-  panel4.Visible := tabcontrol.TabIndex = 3;
-end;
-
 procedure TMainForm.WebsafeLblClick(Sender: TObject);
 begin
   TakeClick(websafe1);
@@ -1616,9 +1771,9 @@ end;
 procedure TMainForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   ReleaseDC(0, ScreenDC);
-  MemPix.Free;
-  BoxBuf.Free;
-  Box2Buf.Free;
+  FreeAndNil(MemPix);
+  FreeAndNil(BoxBuf);
+  FreeAndNil(Box2Buf);
 end;
 
 procedure TMainForm.OutboxPaint(Sender: TObject);
@@ -1635,7 +1790,7 @@ end;
 procedure TMainForm.PalClick(Sender: TObject);
 begin
   ZeigeRichtigePalette;
-  SchreibeInt('Palette', Pal.ItemIndex);
+  WriteIntSetting('Palette', Pal.ItemIndex);
 end;
 
 procedure TMainForm.WinDialogClick(Sender: TObject);
@@ -1647,7 +1802,7 @@ end;
 
 procedure TMainForm.WebcolorBoxClick(Sender: TObject);
 begin
-  html.Text := webfarben[webcolorbox.ItemIndex];
+  html.Text := UpperCase(webfarben[webcolorbox.ItemIndex]);
 
   R.OnChange := nil;
   G.OnChange := nil;
@@ -1672,7 +1827,7 @@ begin
   AktualisiereWert(g);
   AktualisiereWert(b);
 
-  // WebcolorBox muss nicht mehr ignoriert werden, da wir nun "WebZustimmend"
+  // WebcolorBox muss nicht mehr ignoriert werden, da wir nun "CheckWebfarben"
   // verwenden und nichts mehr in der WebcolorBox markieren
   // AktualisiereFarben(true, 2);
   AktualisiereFarben(true);
@@ -1684,11 +1839,11 @@ var
 begin
   WebZutreffend.Clear;
   if webcolorbox.itemindex <> -1 then
-    if html.text <> webfarben[webcolorbox.itemindex] then
+    if not SameText(html.text, webfarben[webcolorbox.itemindex]) then
       webcolorbox.itemindex := -1;
   for i := 0 to high(webfarben) do
   begin
-    if html.text = webfarben[i] then
+    if SameText(html.text, webfarben[i]) then
       WebZutreffend.Items.add(webcolorbox.Items.Strings[i]); // Geht nicht mit mehreren Übereinstimmungen: webcolorbox.ItemIndex := i;
   end;
 end;
@@ -1722,15 +1877,13 @@ end;
 procedure TMainForm.LinkClick(Sender: TObject);
 begin
   if sender = info7 then
-    ShellExecute(Application.Handle, 'open', pchar('mailto:'+tlabel(sender).caption+'?subject=ColorManager 2.0'), nil, nil, SW_SHOW);
+    ShellExecute(Application.Handle, 'open', pchar('mailto:'+tlabel(sender).caption+'?subject=ColorManager 2.1'), nil, nil, SW_SHOW);
   if (sender = Info9) or (sender = Info13) then
     ShellExecute(Application.Handle, 'open', pchar(Info9.caption), nil, nil, SW_SHOW);
-  if (sender = Info11) then
-    ShellExecute(Application.Handle, 'open', 'http://www.icq.com/people/about_me.php?uin=160106169', nil, nil, SW_SHOW);
   if (sender = Info14) then
-    ShellExecute(Application.Handle, 'open', 'http://www.viathinksoft.de/', nil, nil, SW_SHOW);
+    ShellExecute(Application.Handle, 'open', 'https://www.viathinksoft.de/', nil, nil, SW_SHOW);
   if (sender = Info15) then
-    ShellExecute(Application.Handle, 'open', 'http://www.viathinksoft.de/index.php?page=projektanzeige&seite=projekt-20', nil, nil, SW_SHOW);
+    ShellExecute(Application.Handle, 'open', 'https://www.viathinksoft.de/projects/colormanager', nil, nil, SW_SHOW);
 end;
 
 var
@@ -1745,7 +1898,7 @@ begin
     Info1.Font.Color := hsvtorgb(ColorTmrDurchlauf, 255, 200);
 end;
 
-procedure TMainForm.SchreibeInt(name: string; wert: integer);
+procedure TMainForm.WriteIntSetting(name: string; wert: integer);
 var
   reg: TRegistry;
 begin
@@ -1760,7 +1913,7 @@ begin
   end;
 end;
 
-function TMainForm.LeseInt(name: string): integer;
+function TMainForm.ReadIntSetting(name: string): integer;
 var
   reg: TRegistry;
 begin
@@ -1779,7 +1932,7 @@ end;
 
 procedure TMainForm.SaveEditChange(Sender: TObject);
 begin
-  SchreibeInt(tedit(sender).GetNamePath, strtoint(tedit(sender).text));
+  WriteIntSetting(tedit(sender).GetNamePath, strtoint(tedit(sender).text));
 end;
 
 procedure TMainForm.ColorClick(Sender: TObject; Button: TMouseButton;

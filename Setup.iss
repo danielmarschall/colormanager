@@ -3,23 +3,28 @@
 
 [Setup]
 AppName=ColorManager
-AppVerName=ColorManager 2.0
-AppVersion=2.0
-AppCopyright=© Copyright 2001 - 2006 ViaThinkSoft.
+AppVerName=ColorManager 2.1
+AppVersion=2.1
+AppCopyright=© Copyright 2001 - 2024 ViaThinkSoft.
 AppPublisher=ViaThinkSoft
 AppPublisherURL=http://www.viathinksoft.de/
 AppSupportURL=http://www.daniel-marschall.de/
 AppUpdatesURL=http://www.viathinksoft.de/
-DefaultDirName={pf}\ColorManager 2.0
-DefaultGroupName=ColorManager 2.0
+DefaultDirName={commonpf}\ColorManager 2.1
+DefaultGroupName=ColorManager 2.1
 UninstallDisplayIcon={app}\ColorManager.exe
 VersionInfoCompany=ViaThinkSoft
-VersionInfoCopyright=© Copyright 2001 - 2006 ViaThinkSoft.
-VersionInfoDescription=ColorManager 2.0 Setup
+VersionInfoCopyright=© Copyright 2001 - 2024 ViaThinkSoft.
+VersionInfoDescription=ColorManager 2.1 Setup
 VersionInfoTextVersion=1.0.0.0
-VersionInfoVersion=2.0
+VersionInfoVersion=2.1
 OutputBaseFilename=ColorManagerSetup
 Compression=zip/9
+; Configure Sign Tool in InnoSetup at "Tools => Configure Sign Tools" (adjust the path to your SVN repository location)
+; Name    = sign_single   
+; Command = "C:\SVN\...\sign_single.bat" $f
+SignTool=sign_single
+SignedUninstaller=yes
 
 [Languages]
 Name: de; MessagesFile: "compiler:Languages\German.isl"
@@ -29,7 +34,7 @@ Name: en; MessagesFile: "compiler:Default.isl"
 ;Name: "desktopicon"; Description: "Erstelle eine Verknüpfung auf dem &Desktop"; GroupDescription: "Programmverknüpfungen:"; MinVersion: 4,4
 
 [Files]
-Source: "ColorManager.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "ColorManager.exe"; DestDir: "{app}"; Flags: ignoreversion signonce
 Source: "Language.ini"; DestDir: "{app}"; Flags: ignoreversion; Languages: de
 Source: "Language-Eng.ini"; DestDir: "{app}"; DestName: "Language.ini"; Languages: en
 
@@ -37,9 +42,9 @@ Source: "Language-Eng.ini"; DestDir: "{app}"; DestName: "Language.ini"; Language
 ; Name: "{group}\Webseiten"
 
 [Icons]
-Name: "{group}\ColorManager"; Filename: "{app}\ColorManager.exe"
-Name: "{group}\ColorManager deinstallieren"; Filename: "{uninstallexe}"; Languages: de
-Name: "{group}\Uninstall ColorManager"; Filename: "{uninstallexe}"; Languages: en
+Name: "{group}\ColorManager 2.1"; Filename: "{app}\ColorManager.exe"
+; Name: "{group}\ColorManager 2.1 deinstallieren"; Filename: "{uninstallexe}"; Languages: de
+; Name: "{group}\Uninstall ColorManager 2.1"; Filename: "{uninstallexe}"; Languages: en
 ; Name: "{group}\Webseiten\Daniel Marschalls Webportal"; Filename: "http://www.daniel-marschall.de/"
 ; Name: "{group}\Webseiten\ViaThinkSoft"; Filename: "http://www.viathinksoft.de/"
 ; Name: "{group}\Webseiten\Projektseite auf ViaThinkSoft"; Filename: "http://www.viathinksoft.de/index.php?page=projektanzeige&seite=projekt-20"

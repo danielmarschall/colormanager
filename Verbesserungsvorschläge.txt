@@ -1,4 +1,4 @@
-mehr farbräume
+mehr farbräume (cmyk, xyz), https://toolstud.io/tools/color.asp
 farben im screenshot wählen
 fenster beim picking minimieren
 beliebige basen bei eingaben

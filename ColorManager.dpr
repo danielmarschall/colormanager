@@ -1,7 +1,5 @@
 program ColorManager;
 
-{$Description 'ColorManager 2.0'}
-
 uses
   Forms,
   Unit1 in 'Unit1.pas' {MainForm};
@@ -10,7 +8,8 @@ uses
 
 begin
   Application.Initialize;
-  Application.Title := 'ColorManager 2.0';
+  Application.MainFormOnTaskBar := true;
+  Application.Title := 'ColorManager 2.1';
   Application.CreateForm(TMainForm, MainForm);
   Application.Run;
 end.
