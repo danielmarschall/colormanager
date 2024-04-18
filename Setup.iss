@@ -5,21 +5,21 @@
 AppName=ColorManager
 AppVerName=ColorManager 2.1
 AppVersion=2.1
-AppCopyright=© Copyright 2001 - 2024 ViaThinkSoft.
+AppCopyright=© Copyright 2001 - 2024 ViaThinkSoft
 AppPublisher=ViaThinkSoft
 AppPublisherURL=http://www.viathinksoft.de/
 AppSupportURL=http://www.daniel-marschall.de/
 AppUpdatesURL=http://www.viathinksoft.de/
-DefaultDirName={commonpf}\ColorManager 2.1
+DefaultDirName={autopf}\ColorManager 2.1
 DefaultGroupName=ColorManager 2.1
 UninstallDisplayIcon={app}\ColorManager.exe
 VersionInfoCompany=ViaThinkSoft
-VersionInfoCopyright=© Copyright 2001 - 2024 ViaThinkSoft.
+VersionInfoCopyright=© Copyright 2001 - 2024 ViaThinkSoft
 VersionInfoDescription=ColorManager 2.1 Setup
 VersionInfoTextVersion=1.0.0.0
 VersionInfoVersion=2.1
+OutputDir=.
 OutputBaseFilename=ColorManagerSetup
-Compression=zip/9
 ; Configure Sign Tool in InnoSetup at "Tools => Configure Sign Tools" (adjust the path to your SVN repository location)
 ; Name    = sign_single   
 ; Command = "C:\SVN\...\sign_single.bat" $f
@@ -57,9 +57,9 @@ Filename: "{app}\ColorManager.exe"; Description: "Run ColorManager"; Flags: nowa
 [Code]
 function InitializeSetup(): Boolean;
 begin
-  if CheckForMutexes('Color20Setup')=false then
+  if CheckForMutexes('ColorManager21Setup')=false then
   begin
-    Createmutex('Color20Setup');
+    Createmutex('ColorManager21Setup');
     Result := true;
   end
   else
