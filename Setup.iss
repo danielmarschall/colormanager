@@ -7,9 +7,9 @@ AppVerName=ColorManager 2.1
 AppVersion=2.1
 AppCopyright=© Copyright 2001 - 2024 ViaThinkSoft
 AppPublisher=ViaThinkSoft
-AppPublisherURL=http://www.viathinksoft.de/
-AppSupportURL=http://www.daniel-marschall.de/
-AppUpdatesURL=http://www.viathinksoft.de/
+AppPublisherURL=https://www.viathinksoft.de/
+AppSupportURL=https://www.daniel-marschall.de/
+AppUpdatesURL=https://www.viathinksoft.de/
 DefaultDirName={autopf}\ColorManager 2.1
 DefaultGroupName=ColorManager 2.1
 UninstallDisplayIcon={app}\ColorManager.exe
@@ -45,9 +45,9 @@ Source: "Language-Eng.ini"; DestDir: "{app}"; DestName: "Language.ini"; Language
 Name: "{group}\ColorManager 2.1"; Filename: "{app}\ColorManager.exe"
 ; Name: "{group}\ColorManager 2.1 deinstallieren"; Filename: "{uninstallexe}"; Languages: de
 ; Name: "{group}\Uninstall ColorManager 2.1"; Filename: "{uninstallexe}"; Languages: en
-; Name: "{group}\Webseiten\Daniel Marschalls Webportal"; Filename: "http://www.daniel-marschall.de/"
-; Name: "{group}\Webseiten\ViaThinkSoft"; Filename: "http://www.viathinksoft.de/"
-; Name: "{group}\Webseiten\Projektseite auf ViaThinkSoft"; Filename: "http://www.viathinksoft.de/index.php?page=projektanzeige&seite=projekt-20"
+; Name: "{group}\Webseiten\Daniel Marschalls Webportal"; Filename: "https://www.daniel-marschall.de/"
+; Name: "{group}\Webseiten\ViaThinkSoft"; Filename: "https://www.viathinksoft.de/"
+; Name: "{group}\Webseiten\Projektseite auf ViaThinkSoft"; Filename: "https://www.viathinksoft.de/index.php?page=projektanzeige&seite=projekt-20"
 ;Name: "{userdesktop}\ColorManager"; Filename: "{app}\ColorManager.exe"; MinVersion: 4,4; Tasks: desktopicon
 
 [Run]
