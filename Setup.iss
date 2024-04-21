@@ -48,7 +48,7 @@ Name: "{group}\ColorManager 2.1"; Filename: "{app}\ColorManager.exe"
 ; Name: "{group}\Webseiten\Daniel Marschalls Webportal"; Filename: "https://www.daniel-marschall.de/"
 ; Name: "{group}\Webseiten\ViaThinkSoft"; Filename: "https://www.viathinksoft.de/"
 ; Name: "{group}\Webseiten\Projektseite auf ViaThinkSoft"; Filename: "https://www.viathinksoft.de/index.php?page=projektanzeige&seite=projekt-20"
-;Name: "{userdesktop}\ColorManager"; Filename: "{app}\ColorManager.exe"; MinVersion: 4,4; Tasks: desktopicon
+;Name: "{autodesktop}\ColorManager"; Filename: "{app}\ColorManager.exe"; MinVersion: 4,4; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\ColorManager.exe"; Description: "ColorManager starten"; Flags: nowait postinstall skipifsilent; Languages: de
