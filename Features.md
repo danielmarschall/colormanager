@@ -1,3 +1,5 @@
+# Features
+
 * Multilingual (Deutsch + Englisch)
 * RGB und HSV Farbraum
 * Color-Picker mit variabler Averange-Funktion

@@ -1,0 +1,4826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xlat>
+  <meta>
+    <version>3</version>
+    <created>2025-04-25T21:30:41.823+02:00</created>
+    <tool>amTranslationManager</tool>
+    <toolversion>2.3.9199.24584</toolversion>
+  </meta>
+  <options>
+    <stringlisthandling>2</stringlisthandling>
+    <omitdonttranslate>True</omitdonttranslate>
+    <sorted>True</sorted>
+    <omitnewstate>True</omitnewstate>
+  </options>
+  <project sourcefile=".\ColorManager.exe" stringsymbolfile=".\ColorManager.drc" language="en-US" properties="536">
+    <targetlanguages>
+      <language language="de-DE" translated="100"/>
+    </targetlanguages>
+    <modules>
+      <module name="resourcestrings" type="strings" properties="438">
+        <items>
+          <item name="System_RTLConsts_hNoFilterViewer">
+            <properties>
+              <property>
+                <value>Kein Hilfe-Viewer, der Filter unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SAncestorNotFound">
+            <properties>
+              <property>
+                <value>Vorfahr für '%s' nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sArgumentInvalid">
+            <properties>
+              <property>
+                <value>Ungültiges Argument</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SArgumentNil">
+            <properties>
+              <property>
+                <value>Argument darf nicht nil sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SArgumentOutOfRange">
+            <properties>
+              <property>
+                <value>Argument außerhalb des Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SAssignError">
+            <properties>
+              <property>
+                <value>%s kann nicht zu %s zugewiesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sBeginInvokeDestroying">
+            <properties>
+              <property>
+                <value>BeginInvoke kann bei der Freigabe für TComponent nicht aufgerufen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SBitsIndexError">
+            <properties>
+              <property>
+                <value>Bits-Index außerhalb des zulässigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SByRefArgMismatch">
+            <properties>
+              <property>
+                <value>VAR- und OUT-Argumente müssen exakt mit dem Parametertyp übereinstimmen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sCannotNegateTimespan">
+            <properties>
+              <property>
+                <value>Negation des Minimalwertes einer Zeitspanne ist ungültig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SCantWriteResourceStreamError">
+            <properties>
+              <property>
+                <value>In einen zum Lesen geöffneten Ressourcen-Stream kann nicht geschrieben werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SCheckSynchronizeError">
+            <properties>
+              <property>
+                <value>CheckSynchronize wurde vom Thread $%x aufgerufen, der NICHT der Haupt-Thread ist.</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SClassNotFound">
+            <properties>
+              <property>
+                <value>Klasse %s nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SDuplicateClass">
+            <properties>
+              <property>
+                <value>Klasse mit der Bezeichnung %s existiert bereits</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SDuplicateItem">
+            <properties>
+              <property>
+                <value>Liste gestattet keine doppelten Einträge ($0%x)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SDuplicateName">
+            <properties>
+              <property>
+                <value>Komponente mit der Bezeichnung %s existiert bereits</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SDuplicateString">
+            <properties>
+              <property>
+                <value>In der String-Liste sind Duplikate nicht zulässig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SFCreateErrorEx">
+            <properties>
+              <property>
+                <value>Datei "%s" kann nicht erstellt werden. %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SFOpenErrorEx">
+            <properties>
+              <property>
+                <value>Datei %s kann nicht geöffnet werden. %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SGenericDuplicateItem">
+            <properties>
+              <property>
+                <value>Duplikate nicht zulässig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SGenericItemNotFound">
+            <properties>
+              <property>
+                <value>Eintrag nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInputBufferExceed">
+            <properties>
+              <property>
+                <value>Eingabepuffer für %s = %d, %s = %d überschritten</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInsufficientRtti">
+            <properties>
+              <property>
+                <value>Unzureichende RTTI zur Unterstützung dieser Operation verfügbar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidCharsInPath">
+            <properties>
+              <property>
+                <value>Ungültige Zeichen im Pfad</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidImage">
+            <properties>
+              <property>
+                <value>Ungültiges Stream-Format</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidName">
+            <properties>
+              <property>
+                <value>''%s'' ist kein gültiger Komponentenname</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidProperty">
+            <properties>
+              <property>
+                <value>Ungültiger Eigenschaftswert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidPropertyPath">
+            <properties>
+              <property>
+                <value>Ungültiger Pfad für Eigenschaft</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidPropertyValue">
+            <properties>
+              <property>
+                <value>Ungültiger Eigenschaftswert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidRegType">
+            <properties>
+              <property>
+                <value>Ungültiger Datentyp für '%s'</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SInvalidRttiDestroy">
+            <properties>
+              <property>
+                <value>RTTI-Objekte können nicht manuell vom Anwendungscode freigegeben werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sInvalidStringAndObjectArrays">
+            <properties>
+              <property>
+                <value>Die Länge von String- und Objekt-Arrays muss gleich sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sInvalidTimeoutValue">
+            <properties>
+              <property>
+                <value>Ungültiger Wert für Zeitüberschreitung: %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sInvalidTimespanDuration">
+            <properties>
+              <property>
+                <value>Die Dauer kann nicht zurückgegeben werden, weil der absolute Wert den Wert von TTimeSpan.MaxValue überschreitet</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sInvalidTimespanFormat">
+            <properties>
+              <property>
+                <value>Ungültiges TimeSpan-Format</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SListCapacityError">
+            <properties>
+              <property>
+                <value>Kapazität der Liste ist erschöpft (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SListCountError">
+            <properties>
+              <property>
+                <value>Zu viele Einträge in der Liste (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SListIndexError">
+            <properties>
+              <property>
+                <value>Listenindex außerhalb des gültigen Bereichs (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SListIndexErrorEmptyReason">
+            <properties>
+              <property>
+                <value>. %s ist leer</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SListIndexErrorRangeReason">
+            <properties>
+              <property>
+                <value>. %s-Bereich ist 0..%d</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SMemoryStreamError">
+            <properties>
+              <property>
+                <value>Expandieren des Speicher-Stream wegen Speichermangel nicht möglich</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sMustWaitOnOneEvent">
+            <properties>
+              <property>
+                <value>Es muss auf mindestens ein Ereignis gewartet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoComSupport">
+            <properties>
+              <property>
+                <value>%s wurde nicht als COM-Klasse registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sNoConstruct">
+            <properties>
+              <property>
+                <value>Klasse %s soll nicht erzeugt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoContext">
+            <properties>
+              <property>
+                <value>Keine kontextsensitive Hilfe installiert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoContextFound">
+            <properties>
+              <property>
+                <value>Keine Hilfe für Kontext %d gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoIndex">
+            <properties>
+              <property>
+                <value>Index kann nicht geöffnet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNonPublicType">
+            <properties>
+              <property>
+                <value>Typ '%s' ist im interface-Abschnitt einer Unit nicht deklariert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoSearch">
+            <properties>
+              <property>
+                <value>Suche kann nicht geöffnet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoTableOfContents">
+            <properties>
+              <property>
+                <value>Inhaltsverzeichnis nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNothingFound">
+            <properties>
+              <property>
+                <value>Keine Hilfe für %s gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SNoTopics">
+            <properties>
+              <property>
+                <value>Kein themenbezogenes Hilfesystem installiert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverMultipleSingleCast">
+            <properties>
+              <property>
+                <value>Der Observer-Kollektion können nicht mehrere Einfach-Typumwandlungs-Observer hinzugefügt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverNoInterface">
+            <properties>
+              <property>
+                <value>Das Objekt implementiert das Observer-Interface nicht</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverNoMulticastFound">
+            <properties>
+              <property>
+                <value>Der Observer-Kollektion wurde kein Mehrfach-Typumwandlungs-Observer mit der ID %d hinzugefügt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverNoSinglecastFound">
+            <properties>
+              <property>
+                <value>Der Observer-Kollektion wurde kein Einfach-Typumwandlungs-Observer mit der ID %d hinzugefügt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverNotAvailable">
+            <properties>
+              <property>
+                <value>Observer ist nicht verfügbar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sObserverUnsupported">
+            <properties>
+              <property>
+                <value>Observer wird nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SParameterCountMismatch">
+            <properties>
+              <property>
+                <value>Parameteranzahl stimmt nicht überein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SParamIsNegative">
+            <properties>
+              <property>
+                <value>Parameter %s darf kein negativer Wert sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SParamIsNil">
+            <properties>
+              <property>
+                <value>Parameter %s darf nicht Nil sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SPropertyException">
+            <properties>
+              <property>
+                <value>Fehler beim Lesen von %s%s%s: %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SPropIsReadOnly">
+            <properties>
+              <property>
+                <value>Eigenschaft '%s' ist schreibgeschützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SPropIsWriteOnly">
+            <properties>
+              <property>
+                <value>Eigenschaft '%s' kann nur geschrieben werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SReadError">
+            <properties>
+              <property>
+                <value>Stream-Lesefehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SReadOnlyProperty">
+            <properties>
+              <property>
+                <value>Eigenschaft kann nur gelesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SRegCreateFailed">
+            <properties>
+              <property>
+                <value>Erzeugung von Schlüssel %s misslungen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SRegGetDataFailed">
+            <properties>
+              <property>
+                <value>Fehler beim Holen der Daten für '%s'</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SRegSetDataFailed">
+            <properties>
+              <property>
+                <value>Fehler beim Setzen der Daten für '%s'</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SResNotFound">
+            <properties>
+              <property>
+                <value>Ressource %s nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sSameArrays">
+            <properties>
+              <property>
+                <value>Quell- und Ziel-Arrays dürfen nicht gleich sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SSeekNotImplemented">
+            <properties>
+              <property>
+                <value>%s.Seek nicht implementiert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SServiceNotFound">
+            <properties>
+              <property>
+                <value>Angegebener Dienst für die Anmeldeinformationen nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SSortedListError">
+            <properties>
+              <property>
+                <value>Operation für sortierte Listen nicht zulässig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sSpinCountOutOfRange">
+            <properties>
+              <property>
+                <value>SpinCount außerhalb des Bereichs. Muss zwischen 0 und %d liegen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SSPVersionStr">
+            <properties>
+              <property>
+                <value>%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadCreateError">
+            <properties>
+              <property>
+                <value>Fehler beim Erzeugen des Thread: %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadError">
+            <properties>
+              <property>
+                <value>Thread-Fehler: %s (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadExternalCheckTerminated">
+            <properties>
+              <property>
+                <value>CheckTerminated kann nicht für einen extern erstellten Thread aufgerufen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadExternalSetReturnValue">
+            <properties>
+              <property>
+                <value>SetReturnValue kann nicht für einen extern erstellten Thread aufgerufen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadExternalTerminate">
+            <properties>
+              <property>
+                <value>Ein extern erstellter Thread kann nicht beendet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadExternalWait">
+            <properties>
+              <property>
+                <value>Auf einen extern erstellten Thread kann nicht gewartet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SThreadStartError">
+            <properties>
+              <property>
+                <value>Start kann für einen laufenden oder unterbrochenen Thread nicht aufgerufen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sTimespanElementTooLong">
+            <properties>
+              <property>
+                <value>TimeSpan-Element zu lang</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sTimespanTooLong">
+            <properties>
+              <property>
+                <value>TimeSpan zu lang</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_sTimespanValueCannotBeNan">
+            <properties>
+              <property>
+                <value>Wert darf nicht NaN</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SUnknownGroup">
+            <properties>
+              <property>
+                <value>%s befindet sich nicht in einer Gruppe für Klassenregistrierungen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SUnknownProperty">
+            <properties>
+              <property>
+                <value>Eigenschaft %s existiert nicht</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SVersion32">
+            <properties>
+              <property>
+                <value>32-Bit-Edition</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SVersion64">
+            <properties>
+              <property>
+                <value>64-Bit-Edition</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SVersionStr">
+            <properties>
+              <property>
+                <value>%s (Version %d.%d, Build %d, %5:s)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows">
+            <properties>
+              <property>
+                <value>Windows</value>
+                <translations>
+                  <translation language="de-DE" status="proposed">Windows</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows10">
+            <properties>
+              <property>
+                <value>Windows 10</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows11">
+            <properties>
+              <property>
+                <value>Windows 11</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows2000">
+            <properties>
+              <property>
+                <value>Windows 2000</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows7">
+            <properties>
+              <property>
+                <value>Windows 7</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows8">
+            <properties>
+              <property>
+                <value>Windows 8</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindows8Point1">
+            <properties>
+              <property>
+                <value>Windows 8.1</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2003">
+            <properties>
+              <property>
+                <value>Windows Server 2003</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2003R2">
+            <properties>
+              <property>
+                <value>Windows Server 2003 R2</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2008">
+            <properties>
+              <property>
+                <value>Windows Server 2008</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2008R2">
+            <properties>
+              <property>
+                <value>Windows Server 2008 R2</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2012">
+            <properties>
+              <property>
+                <value>Windows Server 2012</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2012R2">
+            <properties>
+              <property>
+                <value>Windows Server 2012 R2</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2016">
+            <properties>
+              <property>
+                <value>Windows Server 2016</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2019">
+            <properties>
+              <property>
+                <value>Windows Server 2019</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsServer2022">
+            <properties>
+              <property>
+                <value>Windows Server 2022</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsVista">
+            <properties>
+              <property>
+                <value>Windows Vista</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWindowsXP">
+            <properties>
+              <property>
+                <value>Windows XP</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWinRTInstanceError">
+            <properties>
+              <property>
+                <value>Instanz der Klasse %s kann nicht erstellt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_RTLConsts_SWriteError">
+            <properties>
+              <property>
+                <value>Stream-Schreibfehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAbstractError">
+            <properties>
+              <property>
+                <value>Abstrakter Fehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAccessDenied">
+            <properties>
+              <property>
+                <value>Dateizugriff verweigert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAccessViolationArg3">
+            <properties>
+              <property>
+                <value>Zugriffsverletzung bei Adresse %p. %s von Adresse %p</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAccessViolationNoArg">
+            <properties>
+              <property>
+                <value>Zugriffsverletzung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SArgumentMissing">
+            <properties>
+              <property>
+                <value>Kein Argument für Format '%s'</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAssertError">
+            <properties>
+              <property>
+                <value>%s (%s, Zeile %d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SAssertionFailed">
+            <properties>
+              <property>
+                <value>Auswertung von assert fehlgeschlagen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SByteIndexOutOfBounds">
+            <properties>
+              <property>
+                <value>Startindex außerhalb des gültigen Bereichs (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SCharIndexOutOfBounds">
+            <properties>
+              <property>
+                <value>Zeichenindex außerhalb des gültigen Bereichs (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SControlC">
+            <properties>
+              <property>
+                <value>Strg+C gedrückt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SDateEncodeError">
+            <properties>
+              <property>
+                <value>Ungültiges Argument zum Codieren des Datums</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SDiskFull">
+            <properties>
+              <property>
+                <value>Zu wenig Speicherplatz</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SDispatchError">
+            <properties>
+              <property>
+                <value>Variant-Methodenaufruf nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SDivByZero">
+            <properties>
+              <property>
+                <value>Division durch Null</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SEndOfFile">
+            <properties>
+              <property>
+                <value>Versuch hinter dem Dateiende zu lesen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SException">
+            <properties>
+              <property>
+                <value>Exception %s in Modul %s bei %p.&amp;#13;&amp;#10;%s%s&amp;#13;&amp;#10;</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SExceptTitle">
+            <properties>
+              <property>
+                <value>Anwendungsfehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SExecuteAccess">
+            <properties>
+              <property>
+                <value>Ausführung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SExternalException">
+            <properties>
+              <property>
+                <value>Externe Exception %x</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SFileNotFound">
+            <properties>
+              <property>
+                <value>Datei nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInOutError">
+            <properties>
+              <property>
+                <value>E/A-Fehler %d</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SIntfCastError">
+            <properties>
+              <property>
+                <value>Interface nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SIntOverflow">
+            <properties>
+              <property>
+                <value>Integerüberlauf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidAccess">
+            <properties>
+              <property>
+                <value>Ungültiger Zugriff</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidCast">
+            <properties>
+              <property>
+                <value>Ungültige Typumwandlung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidCharCount">
+            <properties>
+              <property>
+                <value>Ungültige Anzahl (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidCodePage">
+            <properties>
+              <property>
+                <value>Ungültige Codeseite</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidColor">
+            <properties>
+              <property>
+                <value>'%s' ist kein gültiger Farbwert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidDestinationArray">
+            <properties>
+              <property>
+                <value>Ungültiges Ziel-Array</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidDestinationIndex">
+            <properties>
+              <property>
+                <value>Ungültiger Zielindex (%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidEncodingName">
+            <properties>
+              <property>
+                <value>Ungültiger Codierungsname</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidFormat">
+            <properties>
+              <property>
+                <value>Format '%s' ungültig oder nicht kompatibel mit Argument</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidGUID">
+            <properties>
+              <property>
+                <value>'%s' kein gültiger Wert für GUID</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidInput">
+            <properties>
+              <property>
+                <value>Ungültige numerische Eingabe</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidInteger">
+            <properties>
+              <property>
+                <value>'%s' ist kein gültiger Integerwert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidOp">
+            <properties>
+              <property>
+                <value>Ungültige Gleitkommaoperation</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidPointer">
+            <properties>
+              <property>
+                <value>Ungültige Zeigeroperation</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidSourceArray">
+            <properties>
+              <property>
+                <value>Ungültiges Quell-Array</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidStringBaseIndex">
+            <properties>
+              <property>
+                <value>Ungültiger StringBaseIndex</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidTimeStamp">
+            <properties>
+              <property>
+                <value>'%d.%d' ist kein gültiger Zeitstempel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidUnknownFilename">
+            <properties>
+              <property>
+                <value>Ungültiger Dateiname</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidVarCast">
+            <properties>
+              <property>
+                <value>Ungültige Varianten-Typumwandlung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidVarNullOp">
+            <properties>
+              <property>
+                <value>Ungültige NULL-Variantenoperation</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidVarOp">
+            <properties>
+              <property>
+                <value>Ungültige Variantenoperation</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SInvalidVarOpWithHResultWithPrefix">
+            <properties>
+              <property>
+                <value>Ungültige Variantenoperation (%s%.8x)&amp;#10;%s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameFri">
+            <properties>
+              <property>
+                <value>Freitag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameMon">
+            <properties>
+              <property>
+                <value>Montag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameSat">
+            <properties>
+              <property>
+                <value>Samstag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameSun">
+            <properties>
+              <property>
+                <value>Sonntag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameThu">
+            <properties>
+              <property>
+                <value>Donnerstag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameTue">
+            <properties>
+              <property>
+                <value>Dienstag</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongDayNameWed">
+            <properties>
+              <property>
+                <value>Mittwoch</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameApr">
+            <properties>
+              <property>
+                <value>April</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameAug">
+            <properties>
+              <property>
+                <value>August</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameDec">
+            <properties>
+              <property>
+                <value>Dezember</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameFeb">
+            <properties>
+              <property>
+                <value>Februar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameJan">
+            <properties>
+              <property>
+                <value>Januar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameJul">
+            <properties>
+              <property>
+                <value>Juli</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameJun">
+            <properties>
+              <property>
+                <value>Juni</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameMar">
+            <properties>
+              <property>
+                <value>März</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameMay">
+            <properties>
+              <property>
+                <value>Mai</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameNov">
+            <properties>
+              <property>
+                <value>November</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameOct">
+            <properties>
+              <property>
+                <value>Oktober</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SLongMonthNameSep">
+            <properties>
+              <property>
+                <value>September</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SModuleAccessViolation">
+            <properties>
+              <property>
+                <value>Zugriffsverletzung bei Adresse %p in Modul '%s' (Offset %x). %s von Adresse %p</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SMonitorLockException">
+            <properties>
+              <property>
+                <value>Kein Eigentümer der Objektsperre</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SNoMappingForUnicodeCharacter">
+            <properties>
+              <property>
+                <value>Keine Zuordnung für Unicode-Zeichen in der Multibyte-Zielcodeseite vorhanden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SNoMonitorSupportException">
+            <properties>
+              <property>
+                <value>Unterstützungsfunktion für Monitor nicht initialisiert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SNotImplemented">
+            <properties>
+              <property>
+                <value>Feature nicht implementiert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SObjectDisposed">
+            <properties>
+              <property>
+                <value>Methode für freigegebenes Objekt aufgerufen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SOSError">
+            <properties>
+              <property>
+                <value>Systemfehler.  Code: %d.&amp;#13;&amp;#10;%s%s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SOutOfMemory">
+            <properties>
+              <property>
+                <value>Zu wenig Arbeitsspeicher</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SOverflow">
+            <properties>
+              <property>
+                <value>Gleitkommaüberlauf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SPrivilege">
+            <properties>
+              <property>
+                <value>Privilegierte Anweisung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SRangeError">
+            <properties>
+              <property>
+                <value>Fehler bei Bereichsprüfung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SReadAccess">
+            <properties>
+              <property>
+                <value>Lesen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SSafecallException">
+            <properties>
+              <property>
+                <value>Exception in safecall-Methode</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameFri">
+            <properties>
+              <property>
+                <value>Fr</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameMon">
+            <properties>
+              <property>
+                <value>Mo</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameSat">
+            <properties>
+              <property>
+                <value>Sa</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameSun">
+            <properties>
+              <property>
+                <value>So</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameThu">
+            <properties>
+              <property>
+                <value>Do</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameTue">
+            <properties>
+              <property>
+                <value>Di</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortDayNameWed">
+            <properties>
+              <property>
+                <value>Mi</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameApr">
+            <properties>
+              <property>
+                <value>Apr</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameAug">
+            <properties>
+              <property>
+                <value>Aug</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameDec">
+            <properties>
+              <property>
+                <value>Dez</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameFeb">
+            <properties>
+              <property>
+                <value>Feb</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameJan">
+            <properties>
+              <property>
+                <value>Jan</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameJul">
+            <properties>
+              <property>
+                <value>Jul</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameJun">
+            <properties>
+              <property>
+                <value>Jun</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameMar">
+            <properties>
+              <property>
+                <value>Mär</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameMay">
+            <properties>
+              <property>
+                <value>Mai</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameNov">
+            <properties>
+              <property>
+                <value>Nov</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameOct">
+            <properties>
+              <property>
+                <value>Okt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SShortMonthNameSep">
+            <properties>
+              <property>
+                <value>Sep</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SStackOverflow">
+            <properties>
+              <property>
+                <value>Stack-Überlauf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_STimeEncodeError">
+            <properties>
+              <property>
+                <value>Ungültiges Argument zum Codieren der Uhrzeit</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_STooManyOpenFiles">
+            <properties>
+              <property>
+                <value>Zu viele geöffnete Dateien</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SUnderflow">
+            <properties>
+              <property>
+                <value>Gleitkommaunterlauf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SUnknown">
+            <properties>
+              <property>
+                <value>&lt;unbekannt&gt;</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SUnkOSError">
+            <properties>
+              <property>
+                <value>Ein Aufruf einer Betriebssystemfunktion ist fehlgeschlagen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarArrayBounds">
+            <properties>
+              <property>
+                <value>Variante oder sicheres Array-Index außerhalb des gültigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarArrayCreate">
+            <properties>
+              <property>
+                <value>Fehler beim Erzeugen von Variante oder sicherem Array</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarArrayLocked">
+            <properties>
+              <property>
+                <value>Variante oder sicheres Array ist gesperrt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarBadType">
+            <properties>
+              <property>
+                <value>Ungültiger Variant-Typ</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarInvalid">
+            <properties>
+              <property>
+                <value>Ungültiges Argument</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarNotImplemented">
+            <properties>
+              <property>
+                <value>Operation nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarOverflow">
+            <properties>
+              <property>
+                <value>Variant-Überlauf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeAlreadyUsedWithPrefix">
+            <properties>
+              <property>
+                <value>Benutzerdefinierter Variant-Typ (%s%.4x) bereits benutzt von %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeConvertOverflow">
+            <properties>
+              <property>
+                <value>Überlauf bei der Konvertierung einer Variante vom Typ (%s) in Typ (%s)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeCouldNotConvert">
+            <properties>
+              <property>
+                <value>Variante des Typs (%s) konnte nicht in Typ (%s) konvertiert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeNotUsableWithPrefix">
+            <properties>
+              <property>
+                <value>Benutzerdefinierter Variant-Typ (%s%.4x) nicht brauchbar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeOutOfRangeWithPrefix">
+            <properties>
+              <property>
+                <value>Benutzerdefinierter Variant-Typ (%s%.4x) außerhalb des gültigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarTypeTooManyCustom">
+            <properties>
+              <property>
+                <value>Es wurden zu viele benutzerdefinierte Variant-Typen registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SVarUnexpected">
+            <properties>
+              <property>
+                <value>Unerwarteter Variant-Fehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SWriteAccess">
+            <properties>
+              <property>
+                <value>Schreiben</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_SysConst_SZeroDivide">
+            <properties>
+              <property>
+                <value>Gleitkommadivision durch Null</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_Win_ComConst_SNoMethod">
+            <properties>
+              <property>
+                <value>Die Methode '%s' wird vom Automatisierungsobjekt nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_Win_ComConst_SOleError">
+            <properties>
+              <property>
+                <value>OLE-Fehler %.8x</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_Win_ComConst_STooManyParams">
+            <properties>
+              <property>
+                <value>Dispatch-Methoden unterstützen maximal 64 Parameter.</value>
+              </property>
+            </properties>
+          </item>
+          <item name="System_Win_ComConst_SVarNotObject">
+            <properties>
+              <property>
+                <value>Variante referenziert kein Automatisierungsobjekt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Unit1_SCapture">
+            <properties>
+              <property>
+                <value>Capture</value>
+                <translations>
+                  <translation language="de-DE">Erfassen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sPageIndexError">
+            <properties>
+              <property>
+                <value>%d ist ein ungültiger Wert für PageIndex.  PageIndex muss zwischen 0 und %d liegen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailClear">
+            <properties>
+              <property>
+                <value>Registerelement konnte nicht geleert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailDelete">
+            <properties>
+              <property>
+                <value>Registerseite mit Index %d konnte nicht gelöscht werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailGetObject">
+            <properties>
+              <property>
+                <value>Objekt mit Index %d konnte nicht gelesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailRetrieve">
+            <properties>
+              <property>
+                <value>Registerseite mit Index %d konnte nicht gelesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailSet">
+            <properties>
+              <property>
+                <value>Registerseite  "%s" mit Index %d konnte nicht gesetzt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabFailSetObject">
+            <properties>
+              <property>
+                <value>Objekt mit Index %d konnte nicht gesetzt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sTabMustBeMultiLine">
+            <properties>
+              <property>
+                <value>Für TabPosition tpLeft und tpRight muss MultiLine True sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_ComStrs_sUDAssociated">
+            <properties>
+              <property>
+                <value>%s ist bereits mit %s verknüpft</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SAbortButton">
+            <properties>
+              <property>
+                <value>Abbrechen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SAllButton">
+            <properties>
+              <property>
+                <value>&amp;Alle</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_sAllFilter">
+            <properties>
+              <property>
+                <value>Alle</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_sBeginInvokeNoHandle">
+            <properties>
+              <property>
+                <value>BeginInvoke kann nicht ohne übergeordnetes Element oder Fenster-Handle aufgerufen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCancelButton">
+            <properties>
+              <property>
+                <value>Abbrechen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCannotDragForm">
+            <properties>
+              <property>
+                <value>Formulare können nicht gezogen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCannotFocus">
+            <properties>
+              <property>
+                <value>Deaktiviertes oder unsichtbares Fenster kann den Fokus nicht erhalten</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCannotOpenClipboard">
+            <properties>
+              <property>
+                <value>Zwischenablage %s kann nicht geöffnet werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCannotShowModal">
+            <properties>
+              <property>
+                <value>Sichtbares Fenster kann nicht in modales geändert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SChangeIconSize">
+            <properties>
+              <property>
+                <value>Die Größe eines Symbols kann nicht geändert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SChangeWicSize">
+            <properties>
+              <property>
+                <value>Die Größe einer WIC-Grafik kann nicht verändert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SCloseButton">
+            <properties>
+              <property>
+                <value>&amp;Schließen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SColorBoxCustomCaption">
+            <properties>
+              <property>
+                <value>Individuell...</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SControlNonMainThreadUsage">
+            <properties>
+              <property>
+                <value>Steuerelement '%s' wird nicht für einen Haupt-Thread verwendet</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SControlParentSetToSelf">
+            <properties>
+              <property>
+                <value>Steuerelement kann nicht sich selbst als Vorfahr haben</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SControlPath">
+            <properties>
+              <property>
+                <value>. Pfad:&amp;#13;&amp;#10;%s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDeviceOnPort">
+            <properties>
+              <property>
+                <value>%s an %s</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDockedCtlNeedsName">
+            <properties>
+              <property>
+                <value>Angedocktes Steuerelement muss einen Namen haben.</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDockTreeRemoveError">
+            <properties>
+              <property>
+                <value>Fehler beim Entfernen des Steuerelements aus der Andock-Hierarchie</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDockZoneHasNoCtl">
+            <properties>
+              <property>
+                <value> - Andockzone enthält kein Steuerelement</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDockZoneNotFound">
+            <properties>
+              <property>
+                <value> - Andockzone nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDockZoneVersionConflict">
+            <properties>
+              <property>
+                <value>Fehler beim Laden der Andockzone aus dem Stream. Version %d erwartet, aber %d gefunden.</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDomain">
+            <properties>
+              <property>
+                <value>&amp;Domäne</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SDuplicateMenus">
+            <properties>
+              <property>
+                <value>Menü '%s' wird bereits von einem anderen Formular verwendet</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SErrorSettingCount">
+            <properties>
+              <property>
+                <value>Fehler beim Setzen von %s.Count</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SGroupIndexTooLow">
+            <properties>
+              <property>
+                <value>GroupIndex darf nicht kleiner sein als der GroupIndex eines vorherigen Menüelements</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SHelpButton">
+            <properties>
+              <property>
+                <value>&amp;Hilfe</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SIconToClipboard">
+            <properties>
+              <property>
+                <value>Zwischenablage unterstützt keine Symbole</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SIgnoreButton">
+            <properties>
+              <property>
+                <value>&amp;Ignorieren</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SImageCanvasNeedsBitmap">
+            <properties>
+              <property>
+                <value>Ein Bild kann nur geändert werden, wenn es ein Bitmap enthält</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SImageIndexError">
+            <properties>
+              <property>
+                <value>Ungültiger ImageList-Index</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SImageReadFail">
+            <properties>
+              <property>
+                <value>ImageList-Daten konnten nicht aus dem Stream gelesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SImageWriteFail">
+            <properties>
+              <property>
+                <value>ImageList-Daten konnten nicht in den Stream geschrieben werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInsertImage">
+            <properties>
+              <property>
+                <value>Bild kann nicht eingefügt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInsertLineError">
+            <properties>
+              <property>
+                <value>Zeile kann nicht eingefügt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidBitmap">
+            <properties>
+              <property>
+                <value>Bitmap ist ungültig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidFrameIndex">
+            <properties>
+              <property>
+                <value>Ungültiger Bild-Frame-Index %d: es sind %d Frames vorhanden (0-%d)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidIcon">
+            <properties>
+              <property>
+                <value>Ungültiges Symbol</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidImage">
+            <properties>
+              <property>
+                <value>Ungültiges Bild</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidImageList">
+            <properties>
+              <property>
+                <value>Ungültige Bilderliste</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidImageSize">
+            <properties>
+              <property>
+                <value>Ungültige Bildgröße</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidMetafile">
+            <properties>
+              <property>
+                <value>Metadatei ist ungültig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidPixelFormat">
+            <properties>
+              <property>
+                <value>Ungültiges Pixel-Format</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidPrinter">
+            <properties>
+              <property>
+                <value>Ausgewählter Drucker ist ungültig</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidPrinterOp">
+            <properties>
+              <property>
+                <value>Operation auf ausgewähltem Drucker nicht verfügbar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidTabPosition">
+            <properties>
+              <property>
+                <value>Position des Registers ist nicht mit dem aktuellen Registerstil kompatibel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidTabStyle">
+            <properties>
+              <property>
+                <value>Registerstil ist nicht mit der aktuellen Position kompatibel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidTaskDlgButtonCaption">
+            <properties>
+              <property>
+                <value>Caption darf nicht leer sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SInvalidTextFormatFlag">
+            <properties>
+              <property>
+                <value>Das Textformat-Flag '%s' wird nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SListBoxMustBeVirtual">
+            <properties>
+              <property>
+                <value>Stil des Listenfeldes (%s) muss virtuell sein, damit Count gesetzt werden kann</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SLogin">
+            <properties>
+              <property>
+                <value>Anmelden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMDIChildNotVisible">
+            <properties>
+              <property>
+                <value>Untergeordnetes MDI-Formular kann nicht verborgen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMenuIndexError">
+            <properties>
+              <property>
+                <value>Menüindex außerhalb des zulässigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMenuNotFound">
+            <properties>
+              <property>
+                <value>Untermenü ist nicht im Menü</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMenuReinserted">
+            <properties>
+              <property>
+                <value>Menü zweimal eingefügt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcAlt">
+            <properties>
+              <property>
+                <value>Alt+</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcBkSp">
+            <properties>
+              <property>
+                <value>Rück</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcCtrl">
+            <properties>
+              <property>
+                <value>Strg+</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcDel">
+            <properties>
+              <property>
+                <value>Entf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcDown">
+            <properties>
+              <property>
+                <value>Ab</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcEnd">
+            <properties>
+              <property>
+                <value>Ende</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcEnter">
+            <properties>
+              <property>
+                <value>Eingabe</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcEsc">
+            <properties>
+              <property>
+                <value>Esc</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcHome">
+            <properties>
+              <property>
+                <value>Pos1</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcIns">
+            <properties>
+              <property>
+                <value>Einfg</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcLeft">
+            <properties>
+              <property>
+                <value>Links</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcPgDn">
+            <properties>
+              <property>
+                <value>BildAb</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcPgUp">
+            <properties>
+              <property>
+                <value>BildAuf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcRight">
+            <properties>
+              <property>
+                <value>Rechts</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcShift">
+            <properties>
+              <property>
+                <value>Umsch+</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcSpace">
+            <properties>
+              <property>
+                <value>Leer</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcTab">
+            <properties>
+              <property>
+                <value>Tab</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SmkcUp">
+            <properties>
+              <property>
+                <value>Auf</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgAbort">
+            <properties>
+              <property>
+                <value>&amp;Abbrechen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgAll">
+            <properties>
+              <property>
+                <value>&amp;Alle</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgCancel">
+            <properties>
+              <property>
+                <value>Abbrechen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgClose">
+            <properties>
+              <property>
+                <value>S&amp;chließen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgConfirm">
+            <properties>
+              <property>
+                <value>Bestätigen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgError">
+            <properties>
+              <property>
+                <value>Fehler</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgHelp">
+            <properties>
+              <property>
+                <value>&amp;Hilfe</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgIgnore">
+            <properties>
+              <property>
+                <value>&amp;Ignorieren</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgInformation">
+            <properties>
+              <property>
+                <value>Informationen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgNo">
+            <properties>
+              <property>
+                <value>&amp;Nein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgNoToAll">
+            <properties>
+              <property>
+                <value>&amp;Alle Nein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgOK">
+            <properties>
+              <property>
+                <value>OK</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgRetry">
+            <properties>
+              <property>
+                <value>&amp;Wiederholen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgWarning">
+            <properties>
+              <property>
+                <value>Warnung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgYes">
+            <properties>
+              <property>
+                <value>&amp;Ja</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SMsgDlgYesToAll">
+            <properties>
+              <property>
+                <value>A&amp;lle Ja</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SName3DDkShadow">
+            <properties>
+              <property>
+                <value>3D Dunkler Schatten</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SName3DLight">
+            <properties>
+              <property>
+                <value>3D Hell</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameActiveBorder">
+            <properties>
+              <property>
+                <value>Aktiver Rahmen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameActiveCaption">
+            <properties>
+              <property>
+                <value>Aktive Titelleiste</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameAppWorkSpace">
+            <properties>
+              <property>
+                <value>Arbeitsbereich</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameAqua">
+            <properties>
+              <property>
+                <value>Aquamarin</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBackground">
+            <properties>
+              <property>
+                <value>Hintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBlack">
+            <properties>
+              <property>
+                <value>Schwarz</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBlue">
+            <properties>
+              <property>
+                <value>Blau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBtnFace">
+            <properties>
+              <property>
+                <value>Schaltflächenhintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBtnHighlight">
+            <properties>
+              <property>
+                <value>Schaltflächenhervorhebung</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBtnShadow">
+            <properties>
+              <property>
+                <value>Schaltflächenschatten</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameBtnText">
+            <properties>
+              <property>
+                <value>Schaltflächentext</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameCaptionText">
+            <properties>
+              <property>
+                <value>Titeltext</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameCream">
+            <properties>
+              <property>
+                <value>Creme</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameDefault">
+            <properties>
+              <property>
+                <value>Standard</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameFuchsia">
+            <properties>
+              <property>
+                <value>Fuchsie</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameGradientActiveCaption">
+            <properties>
+              <property>
+                <value>Verlauf Aktiver Titel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameGradientInactiveCaption">
+            <properties>
+              <property>
+                <value>Verlauf Inaktiver Titel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameGray">
+            <properties>
+              <property>
+                <value>Grau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameGrayText">
+            <properties>
+              <property>
+                <value>Grauer Text</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameGreen">
+            <properties>
+              <property>
+                <value>Grün</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameHighlight">
+            <properties>
+              <property>
+                <value>Hervorgehobener Hintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameHighlightText">
+            <properties>
+              <property>
+                <value>Hervorgehobener Text</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameHotLight">
+            <properties>
+              <property>
+                <value>Hell</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameInactiveBorder">
+            <properties>
+              <property>
+                <value>Inaktiver Rahmen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameInactiveCaption">
+            <properties>
+              <property>
+                <value>Inaktiver Titel</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameInactiveCaptionText">
+            <properties>
+              <property>
+                <value>Inaktiver Titeltext</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameInfoBk">
+            <properties>
+              <property>
+                <value>Info-Hintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameInfoText">
+            <properties>
+              <property>
+                <value>Info-Text</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameLime">
+            <properties>
+              <property>
+                <value>Limone</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMaroon">
+            <properties>
+              <property>
+                <value>Braun</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMedGray">
+            <properties>
+              <property>
+                <value>Mittelgrau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMenu">
+            <properties>
+              <property>
+                <value>Menühintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMenuBar">
+            <properties>
+              <property>
+                <value>Menüleiste</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMenuHighlight">
+            <properties>
+              <property>
+                <value>Hervorgehobenes Menü</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMenuText">
+            <properties>
+              <property>
+                <value>Menütext</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameMoneyGreen">
+            <properties>
+              <property>
+                <value>Dollargrün</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameNavy">
+            <properties>
+              <property>
+                <value>Dunkelblau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameNone">
+            <properties>
+              <property>
+                <value>Ohne</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameOlive">
+            <properties>
+              <property>
+                <value>Olivgrün</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNamePurple">
+            <properties>
+              <property>
+                <value>Purpur</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameRed">
+            <properties>
+              <property>
+                <value>Rot</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameScrollBar">
+            <properties>
+              <property>
+                <value>Bildlaufleiste</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameSilver">
+            <properties>
+              <property>
+                <value>Silber</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameSkyBlue">
+            <properties>
+              <property>
+                <value>Himmelblau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameTeal">
+            <properties>
+              <property>
+                <value>Grünblau</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameWhite">
+            <properties>
+              <property>
+                <value>Weiß</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameWindow">
+            <properties>
+              <property>
+                <value>Fensterhintergrund</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameWindowFrame">
+            <properties>
+              <property>
+                <value>Fensterrahmen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameWindowText">
+            <properties>
+              <property>
+                <value>Fenstertext</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNameYellow">
+            <properties>
+              <property>
+                <value>Gelb</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNoButton">
+            <properties>
+              <property>
+                <value>&amp;Nein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNoCanvasHandle">
+            <properties>
+              <property>
+                <value>Canvas erlaubt kein Zeichnen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNoDefaultPrinter">
+            <properties>
+              <property>
+                <value>Aktuell ist kein Standarddrucker ausgewählt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNoMDIForm">
+            <properties>
+              <property>
+                <value>Formular kann nicht erstellt werden. Aktuell sind keine MDI-Formulare aktiv</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNoTimers">
+            <properties>
+              <property>
+                <value>Nicht genügend Timer verfügbar</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SNotPrinting">
+            <properties>
+              <property>
+                <value>Der Drucker druckt aktuell nicht</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SOKButton">
+            <properties>
+              <property>
+                <value>OK</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SOutOfRange">
+            <properties>
+              <property>
+                <value>Wert muss zwischen %d und %d liegen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SOutOfResources">
+            <properties>
+              <property>
+                <value>Systemressourcen erschöpft</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPageControlNotSet">
+            <properties>
+              <property>
+                <value>PageControl muss zuerst zugewiesen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SParentGivenNotAParent">
+            <properties>
+              <property>
+                <value>Das angegebene übergeordnete Element ist kein übergeordnetes Element von '%s'</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SParentRequired">
+            <properties>
+              <property>
+                <value>Element '%s' hat kein übergeordnetes Fenster</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPassword">
+            <properties>
+              <property>
+                <value>&amp;Passwort</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPrinterIndexError">
+            <properties>
+              <property>
+                <value>Druckerindex außerhalb des zulässigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPrinting">
+            <properties>
+              <property>
+                <value>Druckvorgang läuft</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPromptArrayEmpty">
+            <properties>
+              <property>
+                <value>Prompt-Array darf nicht leer sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPromptArrayTooShort">
+            <properties>
+              <property>
+                <value>Länge des Werte-Arrays muss &gt;= der Länge des Prompt-Arrays sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SPropertyOutOfRange">
+            <properties>
+              <property>
+                <value>Eigenschaft %s außerhalb des zulässigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SReplaceImage">
+            <properties>
+              <property>
+                <value>Bild kann nicht ersetzt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SRetryButton">
+            <properties>
+              <property>
+                <value>&amp;Wiederholen</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SScanLine">
+            <properties>
+              <property>
+                <value>Bereichsüberschreitung bei Zeilenindex</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SScrollBarRange">
+            <properties>
+              <property>
+                <value>Eigenschaft Scrollbar außerhalb des zulässigen Bereichs</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleClassNotFound">
+            <properties>
+              <property>
+                <value>Stilklasse '%s' nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleClassRegisterError">
+            <properties>
+              <property>
+                <value>Stilklasse '%s' bereits registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleFeatureNotSupported">
+            <properties>
+              <property>
+                <value>Funktion wird von diesem Stil nicht unterstützt</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleFormatError">
+            <properties>
+              <property>
+                <value>Ungültiges Stilformat</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleHookClassNotRegistered">
+            <properties>
+              <property>
+                <value>Klasse '%s' ist für '%s' nicht registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleHookClassRegistered">
+            <properties>
+              <property>
+                <value>Klasse '%s' ist für '%s' bereits registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleInvalidHandle">
+            <properties>
+              <property>
+                <value>Ungültiges Stil-Handle</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleInvalidParameter">
+            <properties>
+              <property>
+                <value>Parameter %s darf nicht nil sein</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleLoadError">
+            <properties>
+              <property>
+                <value>Stil '%s' kann nicht geladen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleLoadErrors">
+            <properties>
+              <property>
+                <value>Stile %s können nicht geladen werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleNotFound">
+            <properties>
+              <property>
+                <value>Stil '%s' nicht gefunden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleNotRegistered">
+            <properties>
+              <property>
+                <value>Der Stil '%s' ist nicht registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleNotRegisteredNoName">
+            <properties>
+              <property>
+                <value>Stil nicht registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleRegisterError">
+            <properties>
+              <property>
+                <value>Stil '%s' bereits registriert</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SStyleUnregisterError">
+            <properties>
+              <property>
+                <value>Die Registrierung des Systemstils kann nicht aufgehoben werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_STaskDlgButtonCaption">
+            <properties>
+              <property>
+                <value>Button%d</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_STaskDlgRadioButtonCaption">
+            <properties>
+              <property>
+                <value>RadioButton%d</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_STrayIconRemoveError">
+            <properties>
+              <property>
+                <value>Shell-Benachrichtigungssymbol kann nicht entfernt werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SUnknownClipboardFormat">
+            <properties>
+              <property>
+                <value>Nicht unterstütztes Zwischenablagenformat</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SUnknownExtension">
+            <properties>
+              <property>
+                <value>Unbekannte Bilddateierweiterung (.%s)</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SUnknownStreamFormat">
+            <properties>
+              <property>
+                <value>Nicht unterstütztes Stream-Format</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SUsername">
+            <properties>
+              <property>
+                <value>&amp;Benutzername</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVBitmaps">
+            <properties>
+              <property>
+                <value>Bitmaps</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVEnhMetafiles">
+            <properties>
+              <property>
+                <value>Erweiterte Metadateien</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVIcons">
+            <properties>
+              <property>
+                <value>Symbole</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVisibleChanged">
+            <properties>
+              <property>
+                <value>Eigenschaft Visible kann in OnShow oder OnHide nicht verändert werden</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVMetafiles">
+            <properties>
+              <property>
+                <value>Metadateien</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SVTIFFImages">
+            <properties>
+              <property>
+                <value>TIFF-Grafiken</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SWindowClass">
+            <properties>
+              <property>
+                <value>Fehler beim Erzeugen einer Fensterklasse</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SWindowDCError">
+            <properties>
+              <property>
+                <value>Fehler beim Erstellen des Fenster-Gerätekontexts</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SWindowsVistaRequired">
+            <properties>
+              <property>
+                <value>Für %s ist Windows Vista oder höher erforderlich</value>
+              </property>
+            </properties>
+          </item>
+          <item name="Vcl_Consts_SYesButton">
+            <properties>
+              <property>
+                <value>&amp;Ja</value>
+              </property>
+            </properties>
+          </item>
+        </items>
+      </module>
+      <module name="TMAINFORM" type="form" properties="98">
+        <items>
+          <item name="MainForm" type="TMainForm">
+            <properties>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.ColorPanel" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Current color</value>
+                <translations>
+                  <translation language="de-DE">Aktuelle Farbe</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+              <property name="Hint">
+                <value>Select this color</value>
+                <translations>
+                  <translation language="de-DE">Diese Farbe wählen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.ColorPanel.KomplementaerColor" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Inverted color</value>
+                <translations>
+                  <translation language="de-DE">Komplementärfarbe</translation>
+                </translations>
+              </property>
+              <property name="Hint">
+                <value>Select this color</value>
+                <translations>
+                  <translation language="de-DE">Diese Farbe wählen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1" type="TTabSheet">
+            <properties>
+              <property name="Caption">
+                <value>RGB / HSV / Codes</value>
+                <translations>
+                  <translation language="de-DE">RGB / HSV / Codes</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>Color codes</value>
+                <translations>
+                  <translation language="de-DE">Farbcodes</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.DelphiLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Delphi</value>
+                <translations>
+                  <translation language="de-DE">Delphi</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.HTMLLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>HTML / CSS</value>
+                <translations>
+                  <translation language="de-DE">HTML / CSS</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.JavaLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Java</value>
+                <translations>
+                  <translation language="de-DE">Java</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.LongLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>LongInt</value>
+                <translations>
+                  <translation language="de-DE">LongInt</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.PhotoshopLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Photoshop</value>
+                <translations>
+                  <translation language="de-DE">Photoshop</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.VisualBasicLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Visual Basic</value>
+                <translations>
+                  <translation language="de-DE">Visual Basic</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.ColorcodeBox.VisualCLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>C++</value>
+                <translations>
+                  <translation language="de-DE">C++</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.GreyscaleBtn" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Grayscale</value>
+                <translations>
+                  <translation language="de-DE">Graustufen</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+              <property name="Hint" status="skip">
+                <value>I = 0.2126R + 0.7152G + 0.0722B</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>HSV color space</value>
+                <translations>
+                  <translation language="de-DE">HSV-Farbraum</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.HDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.HGraLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.HHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.HLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hue</value>
+                <translations>
+                  <translation language="de-DE">Farbton</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.SDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.SHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.SLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Saturation</value>
+                <translations>
+                  <translation language="de-DE">Sättigung</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.SProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.VDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.VHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.VLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Value</value>
+                <translations>
+                  <translation language="de-DE">Helligkeit</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.HSVBox.VProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.InvertBtn" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Invert color</value>
+                <translations>
+                  <translation language="de-DE">Farbe umkehren</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RandomBtn" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Random color</value>
+                <translations>
+                  <translation language="de-DE">Zufalls-Farbe</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>RGB color space</value>
+                <translations>
+                  <translation language="de-DE">RGB-Farbraum</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.BDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.BHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.BLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Blue</value>
+                <translations>
+                  <translation language="de-DE">Blau</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.BProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.GDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.GHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.GLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Green</value>
+                <translations>
+                  <translation language="de-DE">Grün</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.GProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.RDecLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Dec</value>
+                <translations>
+                  <translation language="de-DE">Dez</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.RHexLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Hex</value>
+                <translations>
+                  <translation language="de-DE">Hex</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.RLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Red</value>
+                <translations>
+                  <translation language="de-DE">Rot</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.RGBBox.RProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet1.Panel1.WebSafeBtn" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Websafe color</value>
+                <translations>
+                  <translation language="de-DE">Websichere Farbe</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2" type="TTabSheet">
+            <properties>
+              <property name="Caption">
+                <value>Palette / Mixer</value>
+                <translations>
+                  <translation language="de-DE">Palette / Mixer</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>Colors</value>
+                <translations>
+                  <translation language="de-DE">Farben</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa1" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>0</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa10" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>9</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa11" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>10</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa12" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>11</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa13" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>12</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa14" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>13</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa15" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>14</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa16" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>15</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa2" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>1</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa3" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>2</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa4" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>3</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa5" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>4</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa6" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>5</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa7" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>6</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa8" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>7</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.cpa9" type="TPanel">
+            <properties>
+              <property name="Caption" status="skip">
+                <value>8</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.BasicPanel.QBLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>VGA colors (Qbasic / QuickBasic)</value>
+                <translations>
+                  <translation language="de-DE">VGA-Farben (Qbasic / QuickBasic)</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.DelphiBox" type="TColorListBox">
+            <properties>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.DelphiBoxLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Delphi palette</value>
+                <translations>
+                  <translation language="de-DE">Delphi-Palette</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.DelphiZutreffendLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Applicable to color</value>
+                <translations>
+                  <translation language="de-DE">Gefunden in</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.FavoPnl.FavoritenLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Favorites</value>
+                <translations>
+                  <translation language="de-DE">Favoriten</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.Pal" type="TListBox">
+            <properties>
+              <property name="Items.Strings[0]">
+                <value>Windows</value>
+                <translations>
+                  <translation language="de-DE">Windows</translation>
+                </translations>
+              </property>
+              <property name="Items.Strings[1]">
+                <value>PaintShop Pro</value>
+                <translations>
+                  <translation language="de-DE">PaintShop Pro</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.PalLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Available palettes</value>
+                <translations>
+                  <translation language="de-DE">Verfügbare Paletten</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.PalPanel.JskPanel.PaintshopProLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>PaintShop Pro palette</value>
+                <translations>
+                  <translation language="de-DE">PaintShop Pro Palette</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.PalPanel.WinPanel.WinDialog" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Open dialogbox</value>
+                <translations>
+                  <translation language="de-DE">Öffne Dialogbox</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.PalPanel.WinPanel.WindowsLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Windows palette</value>
+                <translations>
+                  <translation language="de-DE">Windows-Palette</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.WebcolorBox" type="TListBox">
+            <properties>
+              <property name="Items.Strings[0]" status="skip">
+                <value>aliceblue</value>
+              </property>
+              <property name="Items.Strings[1]" status="skip">
+                <value>antiquewhite</value>
+              </property>
+              <property name="Items.Strings[10]" status="skip">
+                <value>blueviolet</value>
+              </property>
+              <property name="Items.Strings[100]" status="skip">
+                <value>mistyrose</value>
+              </property>
+              <property name="Items.Strings[101]" status="skip">
+                <value>moccasin</value>
+              </property>
+              <property name="Items.Strings[102]" status="skip">
+                <value>navajowhite</value>
+              </property>
+              <property name="Items.Strings[103]" status="skip">
+                <value>navy</value>
+              </property>
+              <property name="Items.Strings[104]" status="skip">
+                <value>oldlace</value>
+              </property>
+              <property name="Items.Strings[105]" status="skip">
+                <value>olive</value>
+              </property>
+              <property name="Items.Strings[106]" status="skip">
+                <value>olivedrab</value>
+              </property>
+              <property name="Items.Strings[107]" status="skip">
+                <value>orange</value>
+              </property>
+              <property name="Items.Strings[108]" status="skip">
+                <value>orangered</value>
+              </property>
+              <property name="Items.Strings[109]" status="skip">
+                <value>orchid</value>
+              </property>
+              <property name="Items.Strings[11]" status="skip">
+                <value>brown</value>
+              </property>
+              <property name="Items.Strings[110]" status="skip">
+                <value>palegoldenrod</value>
+              </property>
+              <property name="Items.Strings[111]" status="skip">
+                <value>palegreen</value>
+              </property>
+              <property name="Items.Strings[112]" status="skip">
+                <value>paleturquoise</value>
+              </property>
+              <property name="Items.Strings[113]" status="skip">
+                <value>palevioletred</value>
+              </property>
+              <property name="Items.Strings[114]" status="skip">
+                <value>papayawhip</value>
+              </property>
+              <property name="Items.Strings[115]" status="skip">
+                <value>peachpuff</value>
+              </property>
+              <property name="Items.Strings[116]" status="skip">
+                <value>peru</value>
+              </property>
+              <property name="Items.Strings[117]" status="skip">
+                <value>pink</value>
+              </property>
+              <property name="Items.Strings[118]" status="skip">
+                <value>plum</value>
+              </property>
+              <property name="Items.Strings[119]" status="skip">
+                <value>powderblue</value>
+              </property>
+              <property name="Items.Strings[12]" status="skip">
+                <value>burlywood</value>
+              </property>
+              <property name="Items.Strings[120]" status="skip">
+                <value>purple</value>
+              </property>
+              <property name="Items.Strings[121]" status="skip">
+                <value>rebeccapurple</value>
+              </property>
+              <property name="Items.Strings[122]" status="skip">
+                <value>red</value>
+              </property>
+              <property name="Items.Strings[123]" status="skip">
+                <value>rosybrown</value>
+              </property>
+              <property name="Items.Strings[124]" status="skip">
+                <value>royalblue</value>
+              </property>
+              <property name="Items.Strings[125]" status="skip">
+                <value>saddlebrown</value>
+              </property>
+              <property name="Items.Strings[126]" status="skip">
+                <value>salmon</value>
+              </property>
+              <property name="Items.Strings[127]" status="skip">
+                <value>sandybrown</value>
+              </property>
+              <property name="Items.Strings[128]" status="skip">
+                <value>seagreen</value>
+              </property>
+              <property name="Items.Strings[129]" status="skip">
+                <value>seashell</value>
+              </property>
+              <property name="Items.Strings[13]" status="skip">
+                <value>cadetblue</value>
+              </property>
+              <property name="Items.Strings[130]" status="skip">
+                <value>sienna</value>
+              </property>
+              <property name="Items.Strings[131]" status="skip">
+                <value>silver</value>
+              </property>
+              <property name="Items.Strings[132]" status="skip">
+                <value>skyblue</value>
+              </property>
+              <property name="Items.Strings[133]" status="skip">
+                <value>slateblue</value>
+              </property>
+              <property name="Items.Strings[134]" status="skip">
+                <value>slategray</value>
+              </property>
+              <property name="Items.Strings[135]" status="skip">
+                <value>slategrey</value>
+              </property>
+              <property name="Items.Strings[136]" status="skip">
+                <value>snow</value>
+              </property>
+              <property name="Items.Strings[137]" status="skip">
+                <value>springgreen</value>
+              </property>
+              <property name="Items.Strings[138]" status="skip">
+                <value>steelblue</value>
+              </property>
+              <property name="Items.Strings[139]" status="skip">
+                <value>tan</value>
+              </property>
+              <property name="Items.Strings[14]" status="skip">
+                <value>chartreuse</value>
+              </property>
+              <property name="Items.Strings[140]" status="skip">
+                <value>teal</value>
+              </property>
+              <property name="Items.Strings[141]" status="skip">
+                <value>thistle</value>
+              </property>
+              <property name="Items.Strings[142]" status="skip">
+                <value>tomato</value>
+              </property>
+              <property name="Items.Strings[143]" status="skip">
+                <value>turquoise</value>
+              </property>
+              <property name="Items.Strings[144]" status="skip">
+                <value>violet</value>
+              </property>
+              <property name="Items.Strings[145]" status="skip">
+                <value>wheat</value>
+              </property>
+              <property name="Items.Strings[146]" status="skip">
+                <value>white</value>
+              </property>
+              <property name="Items.Strings[147]" status="skip">
+                <value>whitesmoke</value>
+              </property>
+              <property name="Items.Strings[148]" status="skip">
+                <value>yellow</value>
+              </property>
+              <property name="Items.Strings[149]" status="skip">
+                <value>yellowgreen</value>
+              </property>
+              <property name="Items.Strings[15]" status="skip">
+                <value>chocolate</value>
+              </property>
+              <property name="Items.Strings[16]" status="skip">
+                <value>coral</value>
+              </property>
+              <property name="Items.Strings[17]" status="skip">
+                <value>cornflowerblue</value>
+              </property>
+              <property name="Items.Strings[18]" status="skip">
+                <value>cornsilk</value>
+              </property>
+              <property name="Items.Strings[19]" status="skip">
+                <value>crimson</value>
+              </property>
+              <property name="Items.Strings[2]" status="skip">
+                <value>aqua</value>
+              </property>
+              <property name="Items.Strings[20]" status="skip">
+                <value>cyan (synonym of aqua)</value>
+              </property>
+              <property name="Items.Strings[21]" status="skip">
+                <value>darkblue</value>
+              </property>
+              <property name="Items.Strings[22]" status="skip">
+                <value>darkcyan</value>
+              </property>
+              <property name="Items.Strings[23]" status="skip">
+                <value>darkgoldenrod</value>
+              </property>
+              <property name="Items.Strings[24]" status="skip">
+                <value>darkgray</value>
+              </property>
+              <property name="Items.Strings[25]" status="skip">
+                <value>darkgreen</value>
+              </property>
+              <property name="Items.Strings[26]" status="skip">
+                <value>darkgrey</value>
+              </property>
+              <property name="Items.Strings[27]" status="skip">
+                <value>darkkhaki</value>
+              </property>
+              <property name="Items.Strings[28]" status="skip">
+                <value>darkmagenta</value>
+              </property>
+              <property name="Items.Strings[29]" status="skip">
+                <value>darkolivegreen</value>
+              </property>
+              <property name="Items.Strings[3]" status="skip">
+                <value>aquamarine</value>
+              </property>
+              <property name="Items.Strings[30]" status="skip">
+                <value>darkorange</value>
+              </property>
+              <property name="Items.Strings[31]" status="skip">
+                <value>darkorchid</value>
+              </property>
+              <property name="Items.Strings[32]" status="skip">
+                <value>darkred</value>
+              </property>
+              <property name="Items.Strings[33]" status="skip">
+                <value>darksalmon</value>
+              </property>
+              <property name="Items.Strings[34]" status="skip">
+                <value>darkseagreen</value>
+              </property>
+              <property name="Items.Strings[35]" status="skip">
+                <value>darkslateblue</value>
+              </property>
+              <property name="Items.Strings[36]" status="skip">
+                <value>darkslategray</value>
+              </property>
+              <property name="Items.Strings[37]" status="skip">
+                <value>darkslategrey</value>
+              </property>
+              <property name="Items.Strings[38]" status="skip">
+                <value>darkturquoise</value>
+              </property>
+              <property name="Items.Strings[39]" status="skip">
+                <value>darkviolet</value>
+              </property>
+              <property name="Items.Strings[4]" status="skip">
+                <value>azure</value>
+              </property>
+              <property name="Items.Strings[40]" status="skip">
+                <value>deeppink</value>
+              </property>
+              <property name="Items.Strings[41]" status="skip">
+                <value>deepskyblue</value>
+              </property>
+              <property name="Items.Strings[42]" status="skip">
+                <value>dimgray</value>
+              </property>
+              <property name="Items.Strings[43]" status="skip">
+                <value>dimgrey</value>
+              </property>
+              <property name="Items.Strings[44]" status="skip">
+                <value>dodgerblue</value>
+              </property>
+              <property name="Items.Strings[45]" status="skip">
+                <value>firebrick</value>
+              </property>
+              <property name="Items.Strings[46]" status="skip">
+                <value>floralwhite</value>
+              </property>
+              <property name="Items.Strings[47]" status="skip">
+                <value>forestgreen</value>
+              </property>
+              <property name="Items.Strings[48]" status="skip">
+                <value>fuchsia</value>
+              </property>
+              <property name="Items.Strings[49]" status="skip">
+                <value>gainsboro</value>
+              </property>
+              <property name="Items.Strings[5]" status="skip">
+                <value>beige</value>
+              </property>
+              <property name="Items.Strings[50]" status="skip">
+                <value>ghostwhite</value>
+              </property>
+              <property name="Items.Strings[51]" status="skip">
+                <value>gold</value>
+              </property>
+              <property name="Items.Strings[52]" status="skip">
+                <value>goldenrod</value>
+              </property>
+              <property name="Items.Strings[53]" status="skip">
+                <value>gray</value>
+              </property>
+              <property name="Items.Strings[54]" status="skip">
+                <value>green</value>
+              </property>
+              <property name="Items.Strings[55]" status="skip">
+                <value>greenyellow</value>
+              </property>
+              <property name="Items.Strings[56]" status="skip">
+                <value>grey (synonym of gray)</value>
+              </property>
+              <property name="Items.Strings[57]" status="skip">
+                <value>honeydew</value>
+              </property>
+              <property name="Items.Strings[58]" status="skip">
+                <value>hotpink</value>
+              </property>
+              <property name="Items.Strings[59]" status="skip">
+                <value>indianred</value>
+              </property>
+              <property name="Items.Strings[6]" status="skip">
+                <value>bisque</value>
+              </property>
+              <property name="Items.Strings[60]" status="skip">
+                <value>indigo</value>
+              </property>
+              <property name="Items.Strings[61]" status="skip">
+                <value>ivory</value>
+              </property>
+              <property name="Items.Strings[62]" status="skip">
+                <value>khaki</value>
+              </property>
+              <property name="Items.Strings[63]" status="skip">
+                <value>lavender</value>
+              </property>
+              <property name="Items.Strings[64]" status="skip">
+                <value>lavenderblush</value>
+              </property>
+              <property name="Items.Strings[65]" status="skip">
+                <value>lawngreen</value>
+              </property>
+              <property name="Items.Strings[66]" status="skip">
+                <value>lemonchiffon</value>
+              </property>
+              <property name="Items.Strings[67]" status="skip">
+                <value>lightblue</value>
+              </property>
+              <property name="Items.Strings[68]" status="skip">
+                <value>lightcoral</value>
+              </property>
+              <property name="Items.Strings[69]" status="skip">
+                <value>lightcyan</value>
+              </property>
+              <property name="Items.Strings[7]" status="skip">
+                <value>black</value>
+              </property>
+              <property name="Items.Strings[70]" status="skip">
+                <value>lightgoldenrodyellow</value>
+              </property>
+              <property name="Items.Strings[71]" status="skip">
+                <value>lightgray</value>
+              </property>
+              <property name="Items.Strings[72]" status="skip">
+                <value>lightgreen</value>
+              </property>
+              <property name="Items.Strings[73]" status="skip">
+                <value>lightgrey</value>
+              </property>
+              <property name="Items.Strings[74]" status="skip">
+                <value>lightpink</value>
+              </property>
+              <property name="Items.Strings[75]" status="skip">
+                <value>lightsalmon</value>
+              </property>
+              <property name="Items.Strings[76]" status="skip">
+                <value>lightseagreen</value>
+              </property>
+              <property name="Items.Strings[77]" status="skip">
+                <value>lightskyblue</value>
+              </property>
+              <property name="Items.Strings[78]" status="skip">
+                <value>lightslategray</value>
+              </property>
+              <property name="Items.Strings[79]" status="skip">
+                <value>lightslategrey</value>
+              </property>
+              <property name="Items.Strings[8]" status="skip">
+                <value>blanchedalmond</value>
+              </property>
+              <property name="Items.Strings[80]" status="skip">
+                <value>lightsteelblue</value>
+              </property>
+              <property name="Items.Strings[81]" status="skip">
+                <value>lightyellow</value>
+              </property>
+              <property name="Items.Strings[82]" status="skip">
+                <value>lime</value>
+              </property>
+              <property name="Items.Strings[83]" status="skip">
+                <value>lime</value>
+              </property>
+              <property name="Items.Strings[84]" status="skip">
+                <value>limegreen</value>
+              </property>
+              <property name="Items.Strings[85]" status="skip">
+                <value>linen</value>
+              </property>
+              <property name="Items.Strings[86]" status="skip">
+                <value>magenta (synonym of fuchsia)</value>
+              </property>
+              <property name="Items.Strings[87]" status="skip">
+                <value>maroon</value>
+              </property>
+              <property name="Items.Strings[88]" status="skip">
+                <value>maroon</value>
+              </property>
+              <property name="Items.Strings[89]" status="skip">
+                <value>mediumaquamarine</value>
+              </property>
+              <property name="Items.Strings[9]" status="skip">
+                <value>blue</value>
+              </property>
+              <property name="Items.Strings[90]" status="skip">
+                <value>mediumblue</value>
+              </property>
+              <property name="Items.Strings[91]" status="skip">
+                <value>mediumorchid</value>
+              </property>
+              <property name="Items.Strings[92]" status="skip">
+                <value>mediumpurple</value>
+              </property>
+              <property name="Items.Strings[93]" status="skip">
+                <value>mediumseagreen</value>
+              </property>
+              <property name="Items.Strings[94]" status="skip">
+                <value>mediumslateblue</value>
+              </property>
+              <property name="Items.Strings[95]" status="skip">
+                <value>mediumspringgreen</value>
+              </property>
+              <property name="Items.Strings[96]" status="skip">
+                <value>mediumturquoise</value>
+              </property>
+              <property name="Items.Strings[97]" status="skip">
+                <value>mediumvioletred</value>
+              </property>
+              <property name="Items.Strings[98]" status="skip">
+                <value>midnightblue</value>
+              </property>
+              <property name="Items.Strings[99]" status="skip">
+                <value>mintcream</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.WebcolorLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>CSS web colors</value>
+                <translations>
+                  <translation language="de-DE">CSS-Webfarben</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorBox.WebZutreffendLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Applicable to color</value>
+                <translations>
+                  <translation language="de-DE" status="proposed">Gefunden in</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>Color mixer</value>
+                <translations>
+                  <translation language="de-DE">Farbmischer</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.Color1" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Color 1</value>
+                <translations>
+                  <translation language="de-DE">Farbe 1</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.Color1Per" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.Color2" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Color 2</value>
+                <translations>
+                  <translation language="de-DE">Farbe 2</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.Color2Per" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>%</value>
+                <translations>
+                  <translation language="de-DE">%</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.EqualLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>=</value>
+                <translations>
+                  <translation language="de-DE">=</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet2.Panel2.ColorMixerBox.MixedColor" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Mixed color</value>
+                <translations>
+                  <translation language="de-DE">Gemischte Farbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3" type="TTabSheet">
+            <properties>
+              <property name="Caption">
+                <value>Color picker</value>
+                <translations>
+                  <translation language="de-DE">Farbwähler</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker" type="TGroupBox">
+            <properties>
+              <property name="Caption">
+                <value>Color picker</value>
+                <translations>
+                  <translation language="de-DE">Farbwähler</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker.AverageLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Average</value>
+                <translations>
+                  <translation language="de-DE">Durchschnitt</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker.AverageMidLbl" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>x</value>
+                <translations>
+                  <translation language="de-DE">x</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker.CoordsLbl" type="TLabel">
+            <properties>
+              <property name="Caption" status="hold">
+                <value>CoordsLbl</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker.CoordsLbl2" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Coordinates</value>
+                <translations>
+                  <translation language="de-DE">Koordinaten</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet3.Panel3.ColorPicker.PickBtn" type="TButton">
+            <properties>
+              <property name="Caption">
+                <value>Capture</value>
+                <translations>
+                  <translation language="de-DE">Erfassen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4" type="TTabSheet">
+            <properties>
+              <property name="Caption">
+                <value>About</value>
+                <translations>
+                  <translation language="de-DE">Über</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info1" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>ColorManager 2.1</value>
+                <translations>
+                  <translation language="de-DE">ColorManager 2.1</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info12" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Weblinks</value>
+                <translations>
+                  <translation language="de-DE">Weblinks</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info13" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Daniel Marschall's homepage</value>
+                <translations>
+                  <translation language="de-DE">Daniel Marschall's Webseite</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info14" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>ViaThinkSoft</value>
+                <translations>
+                  <translation language="de-DE">ViaThinkSoft</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info15" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Project page at ViaThinkSoft</value>
+                <translations>
+                  <translation language="de-DE">Projektseite bei ViaThinkSoft</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info2" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>© Copyright 2001 - 2025 Daniel Marschall, ViaThinkSoft</value>
+                <translations>
+                  <translation language="de-DE">© Copyright 2001 - 2025 Daniel Marschall, ViaThinkSoft</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info3" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Created with Embarcadero Delphi</value>
+                <translations>
+                  <translation language="de-DE">Erstellt mit Embarcadero Delphi</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info4" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Project leader: Daniel Marschall</value>
+                <translations>
+                  <translation language="de-DE">Projektleiter: Daniel Marschall</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info5" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Contact information</value>
+                <translations>
+                  <translation language="de-DE">Kontaktinformationen</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info6" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>eMail</value>
+                <translations>
+                  <translation language="de-DE">E-Mail</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info7" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>info@daniel-marschall.de</value>
+                <translations>
+                  <translation language="de-DE">info@daniel-marschall.de</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info8" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>Website</value>
+                <translations>
+                  <translation language="de-DE">Webseite</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PageControl1.TabSheet4.Panel4.Info9" type="TLabel">
+            <properties>
+              <property name="Caption">
+                <value>http://www.daniel-marschall.de/</value>
+                <translations>
+                  <translation language="de-DE">http://www.daniel-marschall.de/</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Paste color</value>
+                <translations>
+                  <translation language="de-DE">Farbe hier einfügen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor.mAktuell" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Current color</value>
+                <translations>
+                  <translation language="de-DE">Aktuelle Farbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor.mKomplementaer" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Complementary color</value>
+                <translations>
+                  <translation language="de-DE">Komplementärfarbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor.mMixColor" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Mixed color</value>
+                <translations>
+                  <translation language="de-DE">Gemischte Farbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor.mWebsafe" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Websafe color</value>
+                <translations>
+                  <translation language="de-DE">Websichere Farbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mGetColor.mWebsafeInv" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Websafe complementary color</value>
+                <translations>
+                  <translation language="de-DE">Websichere Komplementärfarbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mPutColor" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Copy color</value>
+                <translations>
+                  <translation language="de-DE">Farbe kopieren nach</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mPutColor.mAktuell2" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Current color</value>
+                <translations>
+                  <translation language="de-DE">Aktuelle Farbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mPutColor.mKomplementaer2" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Complementary color</value>
+                <translations>
+                  <translation language="de-DE">Komplementärfarbe</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.PopupMenu.mUmkehren" type="TMenuItem">
+            <properties>
+              <property name="Caption">
+                <value>Invert color</value>
+                <translations>
+                  <translation language="de-DE">Farbe umkehren</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.WebSafe1" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Websafe color</value>
+                <translations>
+                  <translation language="de-DE">Websichere Farbe</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+              <property name="Hint">
+                <value>Select this color</value>
+                <translations>
+                  <translation language="de-DE">Diese Farbe wählen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+          <item name="MainForm.WebSafe1.WebSafe2" type="TPanel">
+            <properties>
+              <property name="Caption">
+                <value>Websafe inverted color</value>
+                <translations>
+                  <translation language="de-DE">Websichere Komplementärfarbe</translation>
+                </translations>
+              </property>
+              <property name="Font.Name" status="skip">
+                <value>MS Sans Serif</value>
+              </property>
+              <property name="Hint">
+                <value>Select this color</value>
+                <translations>
+                  <translation language="de-DE">Diese Farbe wählen</translation>
+                </translations>
+              </property>
+            </properties>
+          </item>
+        </items>
+      </module>
+    </modules>
+  </project>
+</xlat>

@@ -7,9 +7,6 @@ uses
   Buttons, Spin, math, ComCtrls, Messages, Menus, Registry, IniFiles,
   ShellApi, Dialogs;
 
-// Graphutils
-// ColorRGBToHLS
-
 type
   TLanguageEntry = record
     name: string;
@@ -31,7 +28,6 @@ type
     mKomplementaer2: TMenuItem;
     WebSafe1: TPanel;
     WebSafe2: TPanel;
-    CurrentLbl: TLabel;
     mWebsafe: TMenuItem;
     mWebsafeInv: TMenuItem;
     Panel1: TPanel;
@@ -122,7 +118,6 @@ type
     GreyscaleBtn: TPanel;
     InvertBtn: TPanel;
     RandomBtn: TPanel;
-    WebsafeLbl: TLabel;
     WebSafeBtn: TPanel;
     PanelR: TPanel;
     RedBox: TPaintBox;
@@ -360,9 +355,6 @@ type
     procedure UpDownClick(Sender: TObject; Button: TUDBtnType);
     procedure Change(Sender: TObject);
     procedure AverageXYChange(Sender: TObject);
-  private
-    LangArray: Array of TLanguageEntry;
-    function GetLangEntry(name: string): string;
   public
     SampleMethod, NewMethod: byte;
     MemPix: TBitmap;
@@ -548,22 +540,8 @@ const
     '#9acd32'  // yellowgreen
   );
 
-function TMainForm.GetLangEntry(name: string): string;
-var
-  i: integer;
-begin
-  for i := 0 to high(LangArray) do
-  begin
-    if LangArray[i].name = name then
-    begin
-      result := LangArray[i].text;
-      break;
-    end;
-  end;
-end;
-
 // http://www.delphipraxis.net/topic49179_rgb+hsv+und+hsv+rgb.html
-// mit 360°
+// with 360 degree
 function HSVtoRGB(H:Integer; S, V: Byte): TColor;
 var 
   ht, d, t1, t2, t3:Integer; 
@@ -613,7 +591,7 @@ begin
 end;
 
 // http://www.delphipraxis.net/topic49179_rgb+hsv+und+hsv+rgb.html
-// mit 360°
+// with 360 degree
 procedure RGBtoHSV(Red, Green, Blue: Byte; var Hue: Integer; var Saturation, Value: Byte);
 var
   Maximum, Minimum: Byte;
@@ -818,8 +796,6 @@ end;
 procedure TMainForm.FormCreate(Sender: TObject);
 var
   i: integer;
-  ini: tinifile;
-  str: TStringList;
 begin
   Application.OnDeactivate := AppDeactivate;
   Randomize;
@@ -874,127 +850,15 @@ begin
   cpa15.font.color := BlackWhiteContrastColor(cpa15.Color);
   cpa16.font.color := BlackWhiteContrastColor(cpa16.Color);
 
-  // Sprachdatei auslesen
-  if fileexists(ExtractFilePath(Application.ExeName)+'Language.ini') then
-  begin
-    ini := TIniFile.Create(ExtractFilePath(Application.ExeName)+'Language.ini');
-    str := TStringList.Create();
-    try
-      ini.ReadSection(Name, str);
-      for i := 0 to str.count-1 do
-      begin
-        setlength(LangArray, length(LangArray)+1);
-        LangArray[length(LangArray)-1].name := str.strings[i];
-        LangArray[length(LangArray)-1].text := ini.ReadString(name, str.strings[i], '');
-        LangArray[length(LangArray)-1].text := StringReplace(LangArray[length(LangArray)-1].text, '###', #13#10, [rfReplaceAll]);
-      end;
-    finally
-      ini.free;
-      str.Free;
-    end;
-  end;
-
   PageControl1.ActivePageIndex := 0;
-
-  // Elemente mit Sprache versehen
-  rgbbox.Caption := GetLangEntry('rgb');
-  hsvbox.Caption := GetLangEntry('hsv');
-  rdeclbl.Caption := GetLangEntry('dec');
-  gdeclbl.Caption := GetLangEntry('dec');
-  bdeclbl.Caption := GetLangEntry('dec');
-  hdeclbl.Caption := GetLangEntry('dec');
-  sdeclbl.Caption := GetLangEntry('dec');
-  vdeclbl.Caption := GetLangEntry('dec');
-  rhexlbl.Caption := GetLangEntry('hex');
-  ghexlbl.Caption := GetLangEntry('hex');
-  bhexlbl.Caption := GetLangEntry('hex');
-  hhexlbl.Caption := GetLangEntry('hex');
-  shexlbl.Caption := GetLangEntry('hex');
-  vhexlbl.Caption := GetLangEntry('hex');
-  hgralbl.Caption := GetLangEntry('gra');
-  rlbl.Caption := GetLangEntry('red');
-  glbl.Caption := GetLangEntry('green');
-  blbl.Caption := GetLangEntry('blue');
-  GreyscaleBtn.caption := GetLangEntry('greyscale');
-  InvertBtn.caption := GetLangEntry('invert');
-  WebSafeBtn.caption := GetLangEntry('websafe');
-  RandomBtn.caption := GetLangEntry('random');
-  HLbl.caption := GetLangEntry('hue');
-  SLbl.caption := GetLangEntry('sat');
-  VLbl.caption := GetLangEntry('val');
-  ColorcodeBox.caption := GetLangEntry('codes');
-  htmllbl.caption := GetLangEntry('html');
-  delphilbl.caption := GetLangEntry('delphi');
-  VisualClbl.caption := GetLangEntry('cpp');
-  visualbasiclbl.caption := GetLangEntry('visualbasic');
-  javalbl.caption := GetLangEntry('java');
-  photoshoplbl.caption := GetLangEntry('photoshop');
-  longlbl.caption := GetLangEntry('long');
-  currentlbl.caption := GetLangEntry('current');
-  websafelbl.caption := GetLangEntry('websafelbl');
-  komplementaercolor.Caption := GetLangEntry('invcolor');
-  websafe2.Caption := GetLangEntry('invwebsafe');
-  PageControl1.Pages[0].Caption := GetLangEntry('tab1');
-  PageControl1.Pages[1].Caption := GetLangEntry('tab2');
-  PageControl1.Pages[2].Caption := GetLangEntry('tab3');
-  PageControl1.Pages[3].Caption := GetLangEntry('tab4');
-  colormixerbox.Caption := getlangentry('colormixer');
-  color1.Caption := getlangentry('color') + ' 1';
-  color2.Caption := getlangentry('color') + ' 2';
-  mixedcolor.caption := getlangentry('mixedcolor');
-  colorbox.caption := getlangentry('colors');
-  pallbl.Caption := getlangentry('availablepals');
-  delphiboxlbl.Caption := getlangentry('delphipal');
-  webcolorlbl.Caption := getlangentry('css');
-  delphizutreffendlbl.Caption := getlangentry('zutr');
-  webzutreffendlbl.Caption := getlangentry('zutr');
-  qblbl.Caption := getlangentry('vgapal');
-  windialog.Caption := getlangentry('windialog');
-  favoritenlbl.Caption := getlangentry('favorites');
-  pal.Items.add(getlangentry('windows'));
-  pal.Items.add(getlangentry('jasc'));
-  windowslbl.Caption := getlangentry('windows');
-  PaintshopProlbl.Caption := getlangentry('jasc');
-  colorpicker.Caption := getlangentry('colorpicker');
-  averagelbl.Caption := getlangentry('averagepix');
-  CoordsLbl2.Caption := getlangentry('coords');
-  pickbtn.Caption := getlangentry('capture');
-  info3.Caption := getlangentry('createdwith');
-  info4.Caption := getlangentry('leader');
-  info6.Caption := getlangentry('email');
-  info8.Caption := getlangentry('website');
-  info13.Caption := getlangentry('webportal');
-  info14.Caption := getlangentry('viathinksoft');
-  info15.Caption := getlangentry('projektseite');
-  info5.Caption := getlangentry('contact');
-  info12.Caption := getlangentry('links');
-  komplementaercolor.Hint := getlangentry('thiscolor');
-  websafe2.Hint := getlangentry('thiscolor');
-  websafe1.Hint := getlangentry('thiscolor');
-  websafelbl.Hint := getlangentry('thiscolor');
-  sprolbl.Caption := getlangentry('per');
-  vprolbl.Caption := getlangentry('per');
-  rprolbl.Caption := getlangentry('per');
-  gprolbl.Caption := getlangentry('per');
-  bprolbl.Caption := getlangentry('per');
-  popupmenu.Items.Items[0].Caption := getlangentry('PopupA');
-  popupmenu.Items.Items[0].Items[0].Caption := getlangentry('PopupA1');
-  popupmenu.Items.Items[0].Items[1].Caption := getlangentry('PopupA2');
-  popupmenu.Items.Items[0].Items[2].Caption := getlangentry('PopupA3');
-  popupmenu.Items.Items[0].Items[3].Caption := getlangentry('PopupA4');
-  popupmenu.Items.Items[0].Items[4].Caption := getlangentry('PopupA5');
-  popupmenu.Items.Items[1].Caption := getlangentry('PopupB');
-  popupmenu.Items.Items[1].Items[0].Caption := getlangentry('PopupB1');
-  popupmenu.Items.Items[1].Items[1].Caption := getlangentry('PopupB2');
-  popupmenu.Items.Items[2].Caption := getlangentry('PopupC');
 
   // Favoriten-Farben und Einstellungen aus Registry holen
   pal.ItemIndex := 0;
   for i := 1 to 20 do
-    tpanel(mainform.FindComponent('favo'+inttostr(i))).Color := ReadIntSetting('favo'+inttostr(i));
-  pal.ItemIndex := ReadIntSetting('Palette');
-  AverageX.Value := ReadIntSetting('AverageX');
-  AverageY.Value := ReadIntSetting('AverageY');
+    tpanel(mainform.FindComponent('favo'+inttostr(i))).Color := ReadIntSetting('favo'+inttostr(i)); // do not localize
+  pal.ItemIndex := ReadIntSetting('Palette'); // do not localize
+  AverageX.Value := ReadIntSetting('AverageX'); // do not localize
+  AverageY.Value := ReadIntSetting('AverageY'); // do not localize
 
   ZeigeRichtigePalette;
 end;
@@ -1092,6 +956,8 @@ begin
   if Ignore <> 2 then
     CheckWebfarben;
 
+  ColorPanel.Font.Color := BlackWhiteContrastColor(ColorPanel.Color);
+
   KomplementaerColor.Color := ColorPanel.Color xor $FFFFFF;
   KomplementaerColor.Font.Color := BlackWhiteContrastColor(KomplementaerColor.Color);
 
@@ -1099,9 +965,6 @@ begin
   websafe1.Font.Color := BlackWhiteContrastColor(websafe1.Color);
   websafe2.Color := websafe1.color xor $FFFFFF;
   websafe2.Font.Color := BlackWhiteContrastColor(websafe2.Color);
-
-  CurrentLbl.Font.Color := BlackWhiteContrastColor(ColorPanel.Color);
-  WebsafeLbl.Font.Color := BlackWhiteContrastColor(websafe1.Color);
 end;
 
 function DeleteFirstSeros(str: string): string;
@@ -1134,38 +997,38 @@ procedure TMainForm.EditKeyPress(Sender: TObject; var Key: Char);
 begin
   if (sender = HTML) then
   begin
-    if not (Key in [#13, #08, '0'..'9', '#', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', '#', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else if (sender = Delphi) then
   begin
-    if not (Key in [#13, #08, '0'..'9', '$', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', '$', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else if (sender = VisualC) or (sender = Java) then
   begin
-    if not (Key in [#13, #08, '0'..'9', 'x', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', 'x', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else if (sender = VisualBasic) then
   begin
-    if not (Key in [#13, #08, '0'..'9', '&', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', '&', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else if (sender = Photoshop) then
   begin
-    if not (Key in [#13, #08, '0'..'9', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else if (sender = Long) or
     (sender = SPro) or (sender = VPro) or (sender = RPro) or (sender = GPro) or
     (sender = BPro) then
   begin
-    if not (Key in [#13, #08, '0'..'9']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9']) then Key := #0;
   end
   else if (sender = RHex) or (sender = GHex) or (sender = BHex) or
           (sender = HHex) or (sender = SHex) or (sender = VHex) then
   begin
-    if not (Key in [#13, #08, '0'..'9', 'a'..'f', 'A'..'F']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9', 'a'..'f', 'A'..'F']) then Key := #0;
   end
   else
   begin
-    if not (Key in [#13, #08, '0'..'9']) then Key := #0;
+    if not CharInSet(Key, [#13, #08, '0'..'9']) then Key := #0;
   end;
 
   if key = #13 then
@@ -1582,11 +1445,13 @@ begin
 end;
 
 procedure TMainForm.PickBtnClick(Sender: TObject);
+resourcestring
+  SCapture = 'Capture';
 begin
   SetCapture(MainForm.Handle);
   PickBtn.Enabled := false;
   //PickTimer.Enabled := true;
-  Caption := Application.Title + ' ['+getlangentry('capture')+']';
+  Caption := Application.Title + ' [' + SCapture + ']';
 end;
 
 procedure TMainForm.PickTimerTimer(Sender: TObject);
@@ -1790,7 +1655,7 @@ end;
 procedure TMainForm.PalClick(Sender: TObject);
 begin
   ZeigeRichtigePalette;
-  WriteIntSetting('Palette', Pal.ItemIndex);
+  WriteIntSetting('Palette', Pal.ItemIndex); // do not localize
 end;
 
 procedure TMainForm.WinDialogClick(Sender: TObject);
@@ -1905,7 +1770,7 @@ begin
   reg := tregistry.Create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    Reg.OpenKey('SOFTWARE\ViaThinkSoft\ColorManager\', true);
+    Reg.OpenKey('SOFTWARE\ViaThinkSoft\ColorManager\', true); // do not localize
     Reg.WriteInteger(name, wert);
     Reg.CloseKey;
   finally
@@ -1921,7 +1786,7 @@ begin
   reg := tregistry.Create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    Reg.OpenKey('SOFTWARE\ViaThinkSoft\ColorManager\', true);
+    Reg.OpenKey('SOFTWARE\ViaThinkSoft\ColorManager\', true); // do not localize
     if Reg.ValueExists(name) then
       result := Reg.ReadInteger(name);
     Reg.CloseKey;
@@ -1948,4 +1813,3 @@ begin
 end;
 
 end.
-

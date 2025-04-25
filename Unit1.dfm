@@ -20,41 +20,36 @@ object MainForm: TMainForm
     Top = 472
     Width = 736
     Height = 40
+    Hint = 'Select this color'
     Align = alBottom
+    Alignment = taLeftJustify
     BevelOuter = bvNone
+    Caption = 'Current color'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
     ParentBackground = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 0
-    ExplicitTop = 471
-    ExplicitWidth = 732
-    object CurrentLbl: TLabel
-      Left = 8
-      Top = 8
-      Width = 11
-      Height = 20
-      Caption = '#'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
-      ParentFont = False
-      Transparent = True
-    end
     object KomplementaerColor: TPanel
-      Left = 516
+      Left = 480
       Top = 0
-      Width = 220
+      Width = 256
       Height = 40
       Cursor = crHandPoint
+      Hint = 'Select this color'
       Align = alRight
       BevelOuter = bvNone
-      Caption = '#'
+      Caption = 'Inverted color'
       ParentBackground = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
       OnClick = TakeClick
-      ExplicitLeft = 512
     end
   end
   object WebSafe1: TPanel
@@ -63,8 +58,11 @@ object MainForm: TMainForm
     Width = 736
     Height = 24
     Cursor = crHandPoint
+    Hint = 'Select this color'
     Align = alBottom
+    Alignment = taLeftJustify
     BevelOuter = bvNone
+    Caption = 'Websafe color'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -76,47 +74,28 @@ object MainForm: TMainForm
     ShowHint = True
     TabOrder = 1
     OnClick = TakeClick
-    ExplicitTop = 511
-    ExplicitWidth = 732
-    object WebsafeLbl: TLabel
-      Left = 8
-      Top = 4
-      Width = 9
-      Height = 16
+    ExplicitLeft = -8
+    object WebSafe2: TPanel
+      Left = 480
+      Top = 0
+      Width = 256
+      Height = 24
       Cursor = crHandPoint
-      Caption = '#'
+      Hint = 'Select this color'
+      Align = alRight
+      BevelOuter = bvNone
+      Caption = 'Websafe inverted color'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
       Font.Name = 'MS Sans Serif'
       Font.Style = [fsBold]
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = False
-      Transparent = True
-      OnClick = WebsafeLblClick
-    end
-    object WebSafe2: TPanel
-      Left = 516
-      Top = 0
-      Width = 220
-      Height = 24
-      Cursor = crHandPoint
-      Align = alRight
-      BevelOuter = bvNone
-      Caption = '#'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
       ParentBackground = False
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
       OnClick = TakeClick
-      ExplicitLeft = 512
     end
   end
   object PageControl1: TPageControl
@@ -124,13 +103,11 @@ object MainForm: TMainForm
     Top = 0
     Width = 736
     Height = 472
-    ActivePage = TabSheet1
+    ActivePage = TabSheet4
     Align = alClient
     TabOrder = 2
-    ExplicitWidth = 732
-    ExplicitHeight = 471
     object TabSheet1: TTabSheet
-      Caption = '#'
+      Caption = 'RGB / HSV / Codes'
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -144,14 +121,14 @@ object MainForm: TMainForm
           Top = 0
           Width = 713
           Height = 153
-          Caption = '#'
+          Caption = 'RGB color space'
           TabOrder = 0
           object RLbl: TLabel
             Left = 24
             Top = 20
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Red'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -162,9 +139,9 @@ object MainForm: TMainForm
           object GLbl: TLabel
             Left = 24
             Top = 60
-            Width = 9
+            Width = 35
             Height = 13
-            Caption = '#'
+            Caption = 'Green'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -175,9 +152,9 @@ object MainForm: TMainForm
           object BLbl: TLabel
             Left = 24
             Top = 100
-            Width = 9
+            Width = 26
             Height = 13
-            Caption = '#'
+            Caption = 'Blue'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -188,9 +165,9 @@ object MainForm: TMainForm
           object RDecLbl: TLabel
             Left = 536
             Top = 20
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -201,9 +178,9 @@ object MainForm: TMainForm
           object GDecLbl: TLabel
             Left = 536
             Top = 60
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -214,9 +191,9 @@ object MainForm: TMainForm
           object BDecLbl: TLabel
             Left = 536
             Top = 100
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -227,9 +204,9 @@ object MainForm: TMainForm
           object RHexLbl: TLabel
             Left = 592
             Top = 20
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -240,9 +217,9 @@ object MainForm: TMainForm
           object GHexLbl: TLabel
             Left = 592
             Top = 60
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -253,9 +230,9 @@ object MainForm: TMainForm
           object BHexLbl: TLabel
             Left = 592
             Top = 100
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -266,9 +243,9 @@ object MainForm: TMainForm
           object RProLbl: TLabel
             Left = 648
             Top = 20
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -279,9 +256,9 @@ object MainForm: TMainForm
           object GProLbl: TLabel
             Left = 648
             Top = 60
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -292,9 +269,9 @@ object MainForm: TMainForm
           object BProLbl: TLabel
             Left = 648
             Top = 100
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -563,14 +540,14 @@ object MainForm: TMainForm
           Top = 160
           Width = 713
           Height = 153
-          Caption = '#'
+          Caption = 'HSV color space'
           TabOrder = 1
           object HLbl: TLabel
             Left = 24
             Top = 20
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Hue'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -581,9 +558,9 @@ object MainForm: TMainForm
           object SLbl: TLabel
             Left = 24
             Top = 60
-            Width = 9
+            Width = 59
             Height = 13
-            Caption = '#'
+            Caption = 'Saturation'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -594,9 +571,9 @@ object MainForm: TMainForm
           object VLbl: TLabel
             Left = 24
             Top = 100
-            Width = 9
+            Width = 33
             Height = 13
-            Caption = '#'
+            Caption = 'Value'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -607,9 +584,9 @@ object MainForm: TMainForm
           object HDecLbl: TLabel
             Left = 536
             Top = 20
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -620,9 +597,9 @@ object MainForm: TMainForm
           object SDecLbl: TLabel
             Left = 536
             Top = 60
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -633,9 +610,9 @@ object MainForm: TMainForm
           object VDecLbl: TLabel
             Left = 536
             Top = 100
-            Width = 9
+            Width = 24
             Height = 13
-            Caption = '#'
+            Caption = 'Dec'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -646,9 +623,9 @@ object MainForm: TMainForm
           object HHexLbl: TLabel
             Left = 592
             Top = 20
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -659,9 +636,9 @@ object MainForm: TMainForm
           object SHexLbl: TLabel
             Left = 592
             Top = 60
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -672,9 +649,9 @@ object MainForm: TMainForm
           object VHexLbl: TLabel
             Left = 592
             Top = 100
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'Hex'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -685,9 +662,9 @@ object MainForm: TMainForm
           object HGraLbl: TLabel
             Left = 648
             Top = 20
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -698,9 +675,9 @@ object MainForm: TMainForm
           object SProLbl: TLabel
             Left = 648
             Top = 60
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -711,9 +688,9 @@ object MainForm: TMainForm
           object VProLbl: TLabel
             Left = 648
             Top = 100
-            Width = 9
+            Width = 10
             Height = 13
-            Caption = '#'
+            Caption = '%'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -981,14 +958,14 @@ object MainForm: TMainForm
           Top = 320
           Width = 713
           Height = 78
-          Caption = '#'
+          Caption = 'Color codes'
           TabOrder = 2
           object HTMLLbl: TLabel
             Left = 16
             Top = 20
-            Width = 9
+            Width = 73
             Height = 13
-            Caption = '#'
+            Caption = 'HTML / CSS'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -999,9 +976,9 @@ object MainForm: TMainForm
           object DelphiLbl: TLabel
             Left = 114
             Top = 20
-            Width = 9
+            Width = 37
             Height = 13
-            Caption = '#'
+            Caption = 'Delphi'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1012,9 +989,9 @@ object MainForm: TMainForm
           object VisualCLbl: TLabel
             Left = 212
             Top = 20
-            Width = 9
+            Width = 23
             Height = 13
-            Caption = '#'
+            Caption = 'C++'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1025,9 +1002,9 @@ object MainForm: TMainForm
           object VisualBasicLbl: TLabel
             Left = 310
             Top = 20
-            Width = 9
+            Width = 70
             Height = 13
-            Caption = '#'
+            Caption = 'Visual Basic'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1038,9 +1015,9 @@ object MainForm: TMainForm
           object JavaLbl: TLabel
             Left = 408
             Top = 20
-            Width = 9
+            Width = 28
             Height = 13
-            Caption = '#'
+            Caption = 'Java'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1051,9 +1028,9 @@ object MainForm: TMainForm
           object PhotoshopLbl: TLabel
             Left = 506
             Top = 20
-            Width = 9
+            Width = 61
             Height = 13
-            Caption = '#'
+            Caption = 'Photoshop'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1064,9 +1041,9 @@ object MainForm: TMainForm
           object LongLbl: TLabel
             Left = 604
             Top = 20
-            Width = 9
+            Width = 44
             Height = 13
-            Caption = '#'
+            Caption = 'LongInt'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1145,7 +1122,7 @@ object MainForm: TMainForm
           Height = 28
           Cursor = crHandPoint
           Hint = 'I = 0.2126R + 0.7152G + 0.0722B'
-          Caption = '#'
+          Caption = 'Grayscale'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -1164,7 +1141,7 @@ object MainForm: TMainForm
           Width = 172
           Height = 28
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'Invert color'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -1181,7 +1158,7 @@ object MainForm: TMainForm
           Width = 172
           Height = 28
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'Random color'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -1198,7 +1175,7 @@ object MainForm: TMainForm
           Width = 172
           Height = 28
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'Websafe color'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -1212,7 +1189,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet2: TTabSheet
-      Caption = '#'
+      Caption = 'Palette / Mixer'
       ImageIndex = 1
       object Panel2: TPanel
         Left = 0
@@ -1227,7 +1204,7 @@ object MainForm: TMainForm
           Top = 4
           Width = 713
           Height = 117
-          Caption = '#'
+          Caption = 'Color mixer'
           TabOrder = 0
           object Color1Per: TLabel
             Left = 264
@@ -1274,7 +1251,7 @@ object MainForm: TMainForm
             Width = 153
             Height = 33
             Cursor = crHandPoint
-            Caption = '#'
+            Caption = 'Color 2'
             ParentBackground = False
             TabOrder = 3
             OnMouseUp = ColorClick
@@ -1285,7 +1262,7 @@ object MainForm: TMainForm
             Width = 153
             Height = 33
             Cursor = crHandPoint
-            Caption = '#'
+            Caption = 'Color 1'
             ParentBackground = False
             TabOrder = 0
             OnMouseUp = ColorClick
@@ -1296,7 +1273,7 @@ object MainForm: TMainForm
             Width = 193
             Height = 81
             Cursor = crHandPoint
-            Caption = '#'
+            Caption = 'Mixed color'
             ParentBackground = False
             TabOrder = 6
             OnMouseUp = ColorClick
@@ -1341,14 +1318,14 @@ object MainForm: TMainForm
           Top = 125
           Width = 713
           Height = 316
-          Caption = '#'
+          Caption = 'Colors'
           TabOrder = 1
           object DelphiBoxLbl: TLabel
             Left = 368
             Top = 24
-            Width = 9
+            Width = 80
             Height = 13
-            Caption = '#'
+            Caption = 'Delphi palette'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1359,9 +1336,9 @@ object MainForm: TMainForm
           object WebcolorLbl: TLabel
             Left = 552
             Top = 24
-            Width = 9
+            Width = 90
             Height = 13
-            Caption = '#'
+            Caption = 'CSS web colors'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1372,9 +1349,9 @@ object MainForm: TMainForm
           object PalLbl: TLabel
             Left = 232
             Top = 24
-            Width = 9
+            Width = 102
             Height = 13
-            Caption = '#'
+            Caption = 'Available palettes'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1385,9 +1362,9 @@ object MainForm: TMainForm
           object DelphiZutreffendLbl: TLabel
             Left = 368
             Top = 240
-            Width = 9
+            Width = 107
             Height = 13
-            Caption = '#'
+            Caption = 'Applicable to color'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1398,9 +1375,9 @@ object MainForm: TMainForm
           object WebZutreffendLbl: TLabel
             Left = 552
             Top = 240
-            Width = 9
+            Width = 107
             Height = 13
-            Caption = '#'
+            Caption = 'Applicable to color'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1601,9 +1578,9 @@ object MainForm: TMainForm
             object FavoritenLbl: TLabel
               Left = 8
               Top = 8
-              Width = 9
+              Width = 53
               Height = 13
-              Caption = '#'
+              Caption = 'Favorites'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -11
@@ -1862,9 +1839,9 @@ object MainForm: TMainForm
             object QBLbl: TLabel
               Left = 8
               Top = 8
-              Width = 9
+              Width = 193
               Height = 13
-              Caption = '#'
+              Caption = 'VGA colors (Qbasic / QuickBasic)'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -11
@@ -2100,9 +2077,9 @@ object MainForm: TMainForm
               object PaintshopProLbl: TLabel
                 Left = 8
                 Top = 8
-                Width = 9
+                Width = 125
                 Height = 13
-                Caption = '#'
+                Caption = 'PaintShop Pro palette'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWindowText
                 Font.Height = -11
@@ -2698,9 +2675,9 @@ object MainForm: TMainForm
               object WindowsLbl: TLabel
                 Left = 8
                 Top = 8
-                Width = 9
+                Width = 95
                 Height = 13
-                Caption = '#'
+                Caption = 'Windows palette'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clWindowText
                 Font.Height = -11
@@ -2709,13 +2686,13 @@ object MainForm: TMainForm
                 ParentFont = False
               end
               object WinDialog: TLabel
-                Left = 201
+                Left = 134
                 Top = 8
-                Width = 7
+                Width = 74
                 Height = 13
                 Cursor = crHandPoint
                 BiDiMode = bdRightToLeft
-                Caption = '#'
+                Caption = 'Open dialogbox'
                 ParentBiDiMode = False
                 OnClick = WinDialogClick
               end
@@ -3303,6 +3280,9 @@ object MainForm: TMainForm
             Width = 121
             Height = 129
             ItemHeight = 13
+            Items.Strings = (
+              'Windows'
+              'PaintShop Pro')
             TabOrder = 6
             OnClick = PalClick
           end
@@ -3319,7 +3299,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet3: TTabSheet
-      Caption = '#'
+      Caption = 'Color picker'
       ImageIndex = 2
       object Panel3: TPanel
         Left = 0
@@ -3329,22 +3309,20 @@ object MainForm: TMainForm
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 724
-        ExplicitHeight = 443
         object ColorPicker: TGroupBox
           Tag = 120
           Left = 8
           Top = 11
           Width = 713
           Height = 422
-          Caption = '#'
+          Caption = 'Color picker'
           TabOrder = 0
           object AverageLbl: TLabel
             Left = 16
             Top = 24
-            Width = 7
+            Width = 40
             Height = 13
-            Caption = '#'
+            Caption = 'Average'
           end
           object AverageMidLbl: TLabel
             Left = 80
@@ -3363,16 +3341,16 @@ object MainForm: TMainForm
           object CoordsLbl2: TLabel
             Left = 176
             Top = 24
-            Width = 7
+            Width = 56
             Height = 13
-            Caption = '#'
+            Caption = 'Coordinates'
           end
           object PickBtn: TButton
             Left = 16
             Top = 80
             Width = 115
             Height = 25
-            Caption = '#'
+            Caption = 'Capture'
             TabOrder = 0
             OnClick = PickBtnClick
           end
@@ -3416,7 +3394,7 @@ object MainForm: TMainForm
       end
     end
     object TabSheet4: TTabSheet
-      Caption = '#'
+      Caption = 'About'
       ImageIndex = 3
       object Panel4: TPanel
         Left = 0
@@ -3428,14 +3406,14 @@ object MainForm: TMainForm
         object Info1: TLabel
           Left = 16
           Top = 16
-          Width = 192
+          Width = 209
           Height = 29
           Caption = 'ColorManager 2.1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -24
           Font.Name = 'MS Sans Serif'
-          Font.Style = []
+          Font.Style = [fsBold]
           ParentFont = False
         end
         object Info2: TLabel
@@ -3443,21 +3421,21 @@ object MainForm: TMainForm
           Top = 56
           Width = 264
           Height = 13
-          Caption = #169' Copyright 2001 - 2024 Daniel Marschall, ViaThinkSoft'
+          Caption = #169' Copyright 2001 - 2025 Daniel Marschall, ViaThinkSoft'
         end
         object Info4: TLabel
           Left = 32
           Top = 96
-          Width = 7
+          Width = 149
           Height = 13
-          Caption = '#'
+          Caption = 'Project leader: Daniel Marschall'
         end
         object Info6: TLabel
           Left = 48
           Top = 144
-          Width = 7
+          Width = 25
           Height = 13
-          Caption = '#'
+          Caption = 'eMail'
         end
         object Info7: TLabel
           Left = 112
@@ -3477,9 +3455,9 @@ object MainForm: TMainForm
         object Info8: TLabel
           Left = 48
           Top = 160
-          Width = 7
+          Width = 39
           Height = 13
-          Caption = '#'
+          Caption = 'Website'
         end
         object Info9: TLabel
           Left = 112
@@ -3499,9 +3477,9 @@ object MainForm: TMainForm
         object Info12: TLabel
           Left = 32
           Top = 200
-          Width = 9
+          Width = 53
           Height = 13
-          Caption = '#'
+          Caption = 'Weblinks'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -3512,9 +3490,9 @@ object MainForm: TMainForm
         object Info5: TLabel
           Left = 32
           Top = 120
-          Width = 9
+          Width = 111
           Height = 13
-          Caption = '#'
+          Caption = 'Contact information'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -3525,10 +3503,10 @@ object MainForm: TMainForm
         object Info14: TLabel
           Left = 48
           Top = 240
-          Width = 7
+          Width = 61
           Height = 13
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'ViaThinkSoft'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlue
           Font.Height = -11
@@ -3540,10 +3518,10 @@ object MainForm: TMainForm
         object Info15: TLabel
           Left = 48
           Top = 256
-          Width = 7
+          Width = 136
           Height = 13
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'Project page at ViaThinkSoft'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlue
           Font.Height = -11
@@ -3555,10 +3533,10 @@ object MainForm: TMainForm
         object Info13: TLabel
           Left = 48
           Top = 224
-          Width = 7
+          Width = 138
           Height = 13
           Cursor = crHandPoint
-          Caption = '#'
+          Caption = 'Daniel Marschall'#39's homepage'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlue
           Font.Height = -11
@@ -3570,9 +3548,9 @@ object MainForm: TMainForm
         object Info3: TLabel
           Left = 32
           Top = 80
-          Width = 7
+          Width = 158
           Height = 13
-          Caption = '#'
+          Caption = 'Created with Embarcadero Delphi'
         end
       end
     end
@@ -3587,41 +3565,41 @@ object MainForm: TMainForm
     Left = 40
     Top = 504
     object mGetColor: TMenuItem
-      Caption = '#'
+      Caption = 'Paste color'
       object mAktuell: TMenuItem
-        Caption = '#'
+        Caption = 'Current color'
         OnClick = MenuClick
       end
       object mKomplementaer: TMenuItem
-        Caption = '#'
+        Caption = 'Complementary color'
         OnClick = MenuClick
       end
       object mWebsafe: TMenuItem
-        Caption = '#'
+        Caption = 'Websafe color'
         OnClick = MenuClick
       end
       object mWebsafeInv: TMenuItem
-        Caption = '#'
+        Caption = 'Websafe complementary color'
         OnClick = MenuClick
       end
       object mMixColor: TMenuItem
-        Caption = '#'
+        Caption = 'Mixed color'
         OnClick = MenuClick
       end
     end
     object mPutColor: TMenuItem
-      Caption = '#'
+      Caption = 'Copy color'
       object mAktuell2: TMenuItem
-        Caption = '#'
+        Caption = 'Current color'
         OnClick = Menu2Click
       end
       object mKomplementaer2: TMenuItem
-        Caption = '#'
+        Caption = 'Complementary color'
         OnClick = Menu2Click
       end
     end
     object mUmkehren: TMenuItem
-      Caption = '#'
+      Caption = 'Invert color'
       OnClick = MenuClick
     end
   end

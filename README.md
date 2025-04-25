@@ -26,6 +26,12 @@ The new version of ColorManager comes with a lot of new features!
 
 ## Example screenshots
 
-![Page 1](https://www.viathinksoft.de/screenshot/1/ColorManager+%22RGB-HSV-Codes%22+Reiter.jpg)
-![Page 2](https://www.viathinksoft.de/screenshot/16/ColorManager+%22Palette-Mixer%22+Reiter.jpg)
-![Color picker](https://www.viathinksoft.de/screenshot/17/ColorManager+%22Color+picker%22.jpg)
+![Page 1](Screenshot1.jpg)
+![Page 2](Screenshot2.jpg)
+![Color picker](Screenshot3.jpg)
+
+## Tools required for editing source code
+
+* Embarcadero Delphi 12 (Community edition available for non-commercial use)
+
+* [Better Translation Manager](https://github.com/andersmelander/better-translation-manager/)
