@@ -30,7 +30,7 @@ The new version of ColorManager comes with a lot of new features!
 ![Page 2](Screenshot2.jpg)
 ![Color picker](Screenshot3.jpg)
 
-## Tools required for editing source code
+## Tools required for editing the source code
 
 * Embarcadero Delphi 12 (Community edition available for non-commercial use)
 
